@@ -1,0 +1,7 @@
+.trend:before, .innovation:before { background-color:#ccc;color:white;font-family:Roboto !important;font-weight: bold; font-size:.5em !important;display:inline-block;padding:0 .3em !important; border-radius:.3em;margin-bottom:1em !important;transform: rotate(-5deg); text-transform: uppercase;}
+.trend:before {background-color:#1d79c4;content:"trend";}
+.innovation:before {background-color:#fcdd2d;content:"innovation";} 
+
+.source {font-size:.4em !important; text-align:right !important; font-family:"Roboto" !important; display:block;}
+
+.source.left { text-align:left !important; }
