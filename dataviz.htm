@@ -107,7 +107,7 @@ observations
 <p>Some strategies to overcome these constraints:</p>
 <ol type="1">
 <li class="fragment">Filter</li>
-<li class="fragment">Facets/small multiples</li>
+<li class="fragment">Split data into multiple charts</li>
 <li class="fragment">Augmenting visualizations</li>
 <li class="fragment">Densify</li>
 </ol>
@@ -125,10 +125,25 @@ observations
 <h3></h3>
 </section><section id="data-visualization-as-artefact-the-atomic-level-3" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as artefact</span> The atomic level</h3>
-<p><strong>2. Facets/small multiples</strong> <span class="trend"></span></p>
-<p>Hemen zerbait? erreferentziaren bat?</p>
-<p>https://plot.ly/ggplot2/facet/</p>
+<p><strong>2. Split data into multiple charts</strong> <span class="trend"></span></p>
+<p>Facets, trellis, small multiples</p>
 </section><section id="data-visualization-as-artefact-the-atomic-level-4" class="slide level3" data-transition="fade">
+<h3><span class="pretitle">1. Data visualization as artefact</span> The atomic level</h3>
+<p><strong>2. Split data into multiple charts</strong> <span class="trend"></span></p>
+<figure>
+<img data-src="facets.png" alt="Example facet visualization of the observation of animals  by species and sex (Michonneau &amp; Fournier 2018)" height="325" /><figcaption>Example facet visualization of the observation of animals<br/> by species and sex (Michonneau &amp; Fournier 2018)</figcaption>
+</figure>
+</section><section id="data-visualization-as-artefact-the-atomic-level-5" class="slide level3" data-transition="fade">
+<h3><span class="pretitle">1. Data visualization as artefact</span> The atomic level</h3>
+<p><strong>2. Split data into multiple charts</strong> <span class="trend"></span></p>
+<figure>
+<img data-src="smallmultiples2.jpg" alt="Example of small multiples: The Trilogy Meter (Meth 2009)" height="350" /><figcaption>Example of small multiples: The Trilogy Meter (Meth 2009)</figcaption>
+</figure>
+<aside class="notes">
+<p>Small multiples are sets of charts of the same type, with the same scale, presented together at a small size and with minimal detail, usually in a grid of some kind. The term was at least popularized by Edward Tufte, appearing first in his Visual Display of Quantitative Information in 1983. He says of them:</p>
+<pre><code>Small multiples are economical: once viewers understand the design of one [chart], they have immediate access to the data in all the other [charts]… as the eye moves from one [chart to the next, the consistency of the design allows viewers to focus on changes in the data rather than on changes in graphical design.</code></pre>
+</aside>
+</section><section id="data-visualization-as-artefact-the-atomic-level-6" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as artefact</span> The atomic level</h3>
 <p><strong>3. Augmenting visualizations</strong> <span class="trend"></span></p>
 <div class="fragment">
@@ -136,7 +151,7 @@ observations
 <img data-src="ggplot-extra.png" alt="ggExtra, adding marginal histograms to ggplot2 (by Dean Attali)" height="350" /><figcaption><a href="https://daattali.com/shiny/ggExtra-ggMarginal-demo/">ggExtra</a>, adding marginal histograms to ggplot2 (by Dean Attali)</figcaption>
 </figure>
 </div>
-</section><section id="data-visualization-as-artefact-the-atomic-level-5" class="slide level3" data-transition="fade">
+</section><section id="data-visualization-as-artefact-the-atomic-level-7" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as artefact</span> The atomic level</h3>
 <p><strong>4. Densify</strong></p>
 <ul>
@@ -147,7 +162,7 @@ observations
 <img data-src="scatterplot1.png" alt="Clearly overplotted scatterplot (Kovalyshyn 2017)" height="325" /><figcaption>Clearly overplotted scatterplot (Kovalyshyn 2017)</figcaption>
 </figure>
 </div>
-</section><section id="data-visualization-as-artefact-the-atomic-level-6" class="slide level3" data-transition="fade">
+</section><section id="data-visualization-as-artefact-the-atomic-level-8" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as artefact</span> The atomic level</h3>
 <p><strong>4. Densify</strong></p>
 <ul>
@@ -156,7 +171,7 @@ observations
 <figure>
 <img data-src="scatterplot2.png" alt="Using transparency is not helpful (Kovalyshyn 2017)" height="325" /><figcaption>Using transparency is not helpful (Kovalyshyn 2017)</figcaption>
 </figure>
-</section><section id="data-visualization-as-artefact-the-atomic-level-7" class="slide level3" data-transition="fade">
+</section><section id="data-visualization-as-artefact-the-atomic-level-9" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as artefact</span> The atomic level</h3>
 <p><strong>4. Densify</strong></p>
 <ul>
@@ -165,7 +180,7 @@ observations
 <figure>
 <img data-src="scatterplot-hexbin.png" alt="Now we can see density (Kovalyshyn 2017)" height="325" /><figcaption>Now we can <strong>see</strong> density (Kovalyshyn 2017)</figcaption>
 </figure>
-</section><section id="data-visualization-as-artefact-the-atomic-level-8" class="slide level3" data-transition="fade">
+</section><section id="data-visualization-as-artefact-the-atomic-level-10" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as artefact</span> The atomic level</h3>
 <p><strong>4. Densify</strong></p>
 <ul>
@@ -175,16 +190,27 @@ observations
 <figure>
 <img data-src="denselines.png" alt="DenseLines, a density representation of many time series as a heatmap (Moritz &amp; Fisher)" height="325" /><figcaption>DenseLines, a density representation of many time series as a heatmap (Moritz &amp; Fisher)</figcaption>
 </figure>
-</section><section id="data-visualization-as-artefact-the-atomic-level-9" class="slide level3" data-transition="fade">
+</section><section id="data-visualization-as-artefact-the-atomic-level-11" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as artefact</span> The atomic level</h3>
-<p>About real time… ?¿</p>
-<p>Streaming vs real time data</p>
-</section><section id="data-visualization-as-artefact-the-atomic-level-10" class="slide level3" data-transition="fade">
+<p>Adding the time factor:</p>
+<ul>
+<li>Static visualizations with real data (at the time of loading)</li>
+<li>Real-time visualizations, static and auto-refreshed</li>
+<li>Streaming data visualizations showing the flow of data</li>
+</ul>
+<p>Require an additional effort for operational intelligence, where immediate decision making could be a requirement.</p>
+<p><span class="source">Source: Aragues 2018</span></p>
+<aside class="notes">
+<p>A static visualization that uses the data that is available when the visualization is created. Any new data requires a refresh.</p>
+<p>A real-time visualization that looks like the static one but updates itself constantly.</p>
+<p>A streaming data visualization that shows the flow of data and the impact it has on the statistics.</p>
+</aside>
+</section><section id="data-visualization-as-artefact-the-atomic-level-12" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as artefact</span> The atomic level</h3>
 <p>How to communicate <em>nothingness</em>? (Kirk 2014)</p>
 </section><section id="section-2" class="slide level3" data-transition="fade" data-background-iframe="https://www.youtube.com/embed/JqzAuqNPYVM?start=524">
 <h3></h3>
-</section><section id="data-visualization-as-artefact-the-atomic-level-11" class="slide level3" data-transition="fade">
+</section><section id="data-visualization-as-artefact-the-atomic-level-13" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as artefact</span> The atomic level</h3>
 <p>How to communicate <em>nothingness</em>?</p>
 <ul>
@@ -207,7 +233,7 @@ observations
 </aside>
 </section><section id="section-3" class="slide level3" data-transition="fade" data-background-iframe="https://www.youtube.com/embed/JqzAuqNPYVM?start=1153">
 <h3></h3>
-</section><section id="data-visualization-as-artefact-the-atomic-level-12" class="slide level3" data-transition="fade">
+</section><section id="data-visualization-as-artefact-the-atomic-level-14" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as artefact</span> The atomic level</h3>
 <p>How to communicate <em>nothingness</em>?</p>
 <ul>
@@ -220,7 +246,7 @@ observations
 </ul>
 </section><section id="section-4" class="slide level3" data-transition="fade" data-background-iframe="https://www.youtube.com/embed/JqzAuqNPYVM?start=1363">
 <h3></h3>
-</section><section id="data-visualization-as-artefact-the-atomic-level-13" class="slide level3" data-transition="fade-in slide-out">
+</section><section id="data-visualization-as-artefact-the-atomic-level-15" class="slide level3" data-transition="fade-in slide-out">
 <h3><span class="pretitle">1. Data visualization as artefact</span> The atomic level</h3>
 <p>Projections, statistical models, uncertainty</p>
 <p>Unpublished papers:</p>
@@ -381,7 +407,7 @@ Original infographic (right) by Simon Scarr and redesigned, more default represe
 </figure>
 <aside class="notes">
 <p>Very strong message. Red, bars point down, looks like blood. Very evocative, emphasized by the title.</p>
-<p>Rotation: There’s still a peak, but the decline is more aparent</p>
+<p>Rotation: There’s still a peak, but the decline is more apparent</p>
 <p>Title: To match the main takeaway of the graph</p>
 <p>Color: not like blood anymore</p>
 <p>“Situation in Iraq is improving” –&gt; Completely different message!</p>
@@ -433,34 +459,92 @@ Original infographic (right) by Simon Scarr and redesigned, more default represe
 </div>
 </section><section id="data-visualization-as-a-tool-for-communication-what-charts-mean" class="slide level3" data-transition="slide-in fade-out">
 <h3><span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean</h3>
+<p>Charts mean more than just what they say.</p>
 </section><section id="data-visualization-as-a-tool-for-communication-what-charts-mean-1" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean</h3>
-<p><strong>Intentional meaning</strong></p>
+<p><strong>Intentionally</strong></p>
+<blockquote>
+<p>The mode and purpose of a chart should be well understood by the chart maker and immediately apparent to the chart reader.</p>
+</blockquote>
+<p><span class="source">(Meeks 2018)</span></p>
 </section><section id="data-visualization-as-a-tool-for-communication-what-charts-mean-2" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean</h3>
-<p><strong>Historical meaning</strong></p>
+<p><strong>Historically</strong></p>
+<p>Charts are products of their time.</p>
+<p>It is important to provide background about the data sources, to enable checking whether they are still based on relevant priorities, dimensions and metrics.</p>
 </section><section id="data-visualization-as-a-tool-for-communication-what-charts-mean-3" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean</h3>
-<p><strong>Cultural meaning</strong></p>
-</section><section id="data-visualization-as-a-tool-for-communication-what-charts-mean-4" class="slide level3" data-transition="fade-in slide-out">
+<p><strong>Historically</strong></p>
+<figure>
+<img data-src="obesity.png" alt="Obesity chart" /><figcaption>Obesity chart</figcaption>
+</figure>
+</section><section id="data-visualization-as-a-tool-for-communication-what-charts-mean-4" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean</h3>
-<p><strong>Contextual meaning</strong></p>
+<p><strong>Culturally</strong></p>
+<p>Charts should be adapted to the culture they will be consumed in (think user-centered design techniques).</p>
+</section><section id="data-visualization-as-a-tool-for-communication-what-charts-mean-5" class="slide level3" data-transition="fade">
+<h3><span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean</h3>
+<p><strong>Contextually</strong></p>
+<p>Enable removing and adjusting data visualization elements to reduce complexity, not based on screen size as in responsive data visualization, but on priority.</p>
+</section><section id="data-visualization-as-a-tool-for-communication-what-charts-mean-6" class="slide level3" data-transition="fade-in slide-out">
+<h3><span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean</h3>
+<blockquote>
+<p>Meaning-making may sound too soft to the kind of technical professionals that make and read data visualization but communication without meaning is just noise.</p>
+</blockquote>
+<p><span class="source">(Meeks 2018)</span></p>
 </section><section id="data-visualization-as-a-tool-for-communication-what-charts-do" class="slide level3" data-transition="slide-in fade-out">
 <h3><span class="pretitle">2. Data visualization as a tool for communication</span> What charts do</h3>
+<p>The most important thing about a chart is its impact.</p>
 </section><section id="data-visualization-as-a-tool-for-communication-what-charts-do-1" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">2. Data visualization as a tool for communication</span> What charts do</h3>
-<p><strong>Provide insight</strong></p>
+<p><strong>Provide insights</strong></p>
+<p>Identify and emphasize the insights that the readers might expect</p>
+<figure>
+<img data-src="insight.png" alt="simple line chart and highlighted features of the line chart" /><figcaption>simple line chart and highlighted features of the line chart</figcaption>
+</figure>
 </section><section id="data-visualization-as-a-tool-for-communication-what-charts-do-2" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">2. Data visualization as a tool for communication</span> What charts do</h3>
 <p><strong>Cause change</strong></p>
+<p>As difficult to measure as it is important.</p>
+<p>How have they impacted business decisions? How were they used in presentations? Where they modified (changed colours, cropped, annotated) somehow?</p>
+<aside class="notes">
+<p>Understanding how a particular chart was an effective piece of evidence or motivation is key to developing more effective data visualization.</p>
+</aside>
 </section><section id="data-visualization-as-a-tool-for-communication-what-charts-do-3" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">2. Data visualization as a tool for communication</span> What charts do</h3>
 <p><strong>Cause visual literacy</strong></p>
+<blockquote>
+<p>All data visualization was, at some point, complex data visualization, until an audience grew comfortable and literate enough to read it.</p>
+</blockquote>
+<p><span class="source">(Meeks 2018)</span></p>
+<p>(Netflix connected scatterplot chart?)</p>
+<aside class="notes">
+<p>Languages are live things, that evolve over time, and require breakthrough.</p>
+<blockquote>
+<p>[…] the new form cannot be introduced until it is understood but can only be understood once it’s introduced.</p>
+</blockquote>
+</aside>
 </section><section id="data-visualization-as-a-tool-for-communication-what-charts-do-4" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">2. Data visualization as a tool for communication</span> What charts do</h3>
 <p><strong>Create new charts</strong></p>
+<figure>
+<img data-src="chartlineage.png" alt="Imaginary genealogy for charts with scatterplots as a common ancestor (Meeks 2018)" /><figcaption>Imaginary genealogy for charts with scatterplots as a common ancestor (Meeks 2018)</figcaption>
+</figure>
+<aside class="notes">
+<p>Catalogs of data visualization have the tendency to treat every form as a category of one without drawing connections between them, which disguises how charts lead to other charts.</p>
+</aside>
+</section><section id="data-visualization-as-a-tool-for-communication-what-charts-do-5" class="slide level3" data-transition="fade-in slide-out">
+<h3><span class="pretitle">2. Data visualization as a tool for communication</span> What charts do</h3>
+<p><br /></p>
+<blockquote>
+<p>All communication is evaluated based on content, but presuasive communication, which is all data visualization unless it is purely decorative, is rightly also evaluated based on effect.</p>
+</blockquote>
+<p><span class="source">(Meeks 2018)</span></p>
+<aside class="notes">
+<p>Ultimately, what charts do may be the one most important thing.</p>
+</aside>
 </section></section>
-<section><section id="the-artifact-goes-social" class="title-slide slide level2"><h2>3. The artifact goes social</h2></section><section id="data-counseling" class="slide level3">
+<section><section id="the-artefact-goes-social" class="title-slide slide level2"><h2>3. The artefact goes social</h2></section><section id="data-counseling" class="slide level3">
 <h3>Data counseling</h3>
 </section><section id="responsive-data-visualization" class="slide level3">
 <h3>Responsive data visualization</h3>
@@ -471,11 +555,20 @@ Original infographic (right) by Simon Scarr and redesigned, more default represe
 </section><section id="responsive-data-visualization-2" class="slide level3">
 <h3>Responsive data visualization</h3>
 <p>Alerts</p>
+</section></section>
+<section><section id="epilogue" class="title-slide slide level2"><h2>Epilogue</h2></section><section id="resources" class="slide level3">
+<h3>Resources</h3>
+<p>http://oavis.steveharoz.com/</p>
 </section><section id="references" class="slide level3">
 <h3>References</h3>
 <p><span class="source">Source: Ihor Kovalyshyn (2017), <a href="https://delta1epsilon.github.io/2017/When-Scatter-Plot-doesn%27t-work/"><em>When Scatter Plot Doesn’t Work</em></a></span></p>
 <p><span class="source">Source: Dominik Moritz and Danyel Fisher (2018), “Visualizing<br /> a Million Time Serieswith the Density Line Chart” <a href="https://arxiv.org/pdf/1808.06019.pdf">arXiv:1808.06019v2</a> [cs.HC]</span></p>
 <p>Andy Kirk 2014 Null zero blank</p>
+<p>François Michonneau &amp; Auriel Fournier (2018), “Data Carpentry: R for data analysis and visualization of Ecological Data.” doi: 10.5281/zenodo.569338, http://datacarpentry.org/R-ecology-lesson/</p>
+<p>Dan Meth (2009), “The Trilogy Meter” https://danmeth.myportfolio.com//post/77471620/my-trilogy-meter-1-in-a-series-of-pop-cultural</p>
+<p>Anthony Aragues (2018), <em>Visualizing Streaming Data</em>. O’Reilly Media</p>
+</section><section id="thank-you" class="slide level3">
+<h3>Thank you!</h3>
 </section></section>
     </div>
   </div>

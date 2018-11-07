@@ -70,7 +70,7 @@ In a picture of 1000 x 1000 pixels, the maximum of observations to fit is 10<sup
 Some strategies to overcome these constraints:
 
 >1. Filter
->2. Facets/small multiples
+>2. Split data into multiple charts
 >3. Augmenting visualizations
 >4. Densify
 
@@ -86,11 +86,30 @@ Some strategies to overcome these constraints:
 
 ### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
 
-**2. Facets/small multiples** <span class="trend"></span>
+**2. Split data into multiple charts** <span class="trend"></span>
 
-Hemen zerbait? erreferentziaren bat?
+Facets, trellis, small multiples
 
-https://plot.ly/ggplot2/facet/
+### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
+
+**2. Split data into multiple charts** <span class="trend"></span>
+
+![Example facet visualization of the observation of animals<br/> by species and sex (Michonneau & Fournier 2018)](facets.png){height="325"}
+
+### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
+
+**2. Split data into multiple charts** <span class="trend"></span>
+
+![Example of small multiples: The Trilogy Meter (Meth 2009)](smallmultiples2.jpg){height="350"}
+
+::: notes
+
+Small multiples are sets of charts of the same type, with the same scale, presented together at a small size and with minimal detail, usually in a grid of some kind. The term was at least popularized by Edward Tufte, appearing first in his Visual Display of Quantitative Information in 1983. He says of them:
+
+    Small multiples are economical: once viewers understand the design of one [chart], they have immediate access to the data in all the other [charts]… as the eye moves from one [chart to the next, the consistency of the design allows viewers to focus on changes in the data rather than on changes in graphical design.
+
+:::
+
 
 ### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
 
@@ -138,9 +157,25 @@ step-by-step
 
 ### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
 
-About real time... ?¿
+Adding the time factor:
 
-Streaming vs real time data
+- Static visualizations with real data (at the time of loading)
+- Real-time visualizations, static and auto-refreshed
+- Streaming data visualizations showing the flow of data
+
+Require an additional effort for operational intelligence, where immediate decision making could be a requirement.
+
+<span class="source">Source: Aragues 2018</span>
+
+::: notes
+
+A static visualization that uses the data that is available when the visualization is created. Any new data requires a refresh.
+
+A real-time visualization that looks like the static one but updates itself constantly.
+
+A streaming data visualization that shows the flow of data and the impact it has on the statistics.
+
+:::
 
 ### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
 
@@ -385,7 +420,7 @@ Original infographic (right) by Simon Scarr and redesigned, more default represe
 
 Very strong message. Red, bars point down, looks like blood. Very evocative, emphasized by the title.
 
-Rotation: There's still a peak, but the decline is more aparent
+Rotation: There's still a peak, but the decline is more apparent
 
 Title: To match the main takeaway of the graph
 
@@ -456,41 +491,119 @@ What does your chart say that you didn't intend?
 
 ### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean {data-transition="slide-in fade-out"}
 
-### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean {data-transition="fade"}
-
-**Intentional meaning**
+Charts mean more than just what they say.
 
 ### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean {data-transition="fade"}
 
-**Historical meaning**
+**Intentionally**
+
+>The mode and purpose of a chart should be well understood by the chart maker and immediately apparent to the chart reader.
+
+<span class="source">(Meeks 2018)</span>
 
 ### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean {data-transition="fade"}
 
-**Cultural meaning**
+**Historically**
+
+Charts are products of their time. 
+
+It is important to provide background about the data sources, to enable checking whether they are still based on relevant priorities, dimensions and metrics.
+
+### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean {data-transition="fade"}
+
+**Historically**
+
+![Obesity chart](obesity.png)
+
+### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean {data-transition="fade"}
+
+**Culturally**
+
+Charts should be adapted to the culture they will be consumed in (think user-centered design techniques).
+
+### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean {data-transition="fade"}
+
+**Contextually**
+
+Enable removing and adjusting data visualization elements to reduce complexity, not based on screen size as in responsive data visualization, but on priority.
 
 ### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean {data-transition="fade-in slide-out"}
 
-**Contextual meaning**
+>Meaning-making may sound too soft to the kind of technical professionals that make and read data visualization but communication without meaning is just noise.
+
+<span class="source">(Meeks 2018)</span>
 
 ### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts do {data-transition="slide-in fade-out"}
 
+The most important thing about a chart is its impact. 
+
 ### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts do {data-transition="fade"}
 
-**Provide insight**
+**Provide insights**
+
+Identify and emphasize the insights that the readers might expect
+
+![simple line chart and highlighted features of the line chart](insight.png)
 
 ### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts do {data-transition="fade"}
 
 **Cause change**
 
+As difficult to measure as it is important.
+
+How have they impacted business decisions? How were they used in presentations? Where they modified (changed colours, cropped, annotated) somehow?
+
+::: notes
+
+Understanding how a particular chart was an effective piece of evidence or motivation is key to developing more effective data visualization.
+
+:::
+
 ### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts do {data-transition="fade"}
 
 **Cause visual literacy**
+
+>All data visualization was, at some point, complex data visualization, until an audience grew comfortable and literate enough to read it.
+
+<span class="source">(Meeks 2018)</span>
+
+(Netflix connected scatterplot chart?)
+
+::: notes
+
+Languages are live things, that evolve over time, and require breakthrough.
+
+>[...] the new form cannot be introduced until it is understood but can only be understood once it's introduced.
+
+:::
 
 ### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts do {data-transition="fade"}
 
 **Create new charts**
 
-## 3. The artifact goes social
+![Imaginary genealogy for charts with scatterplots as a common ancestor (Meeks 2018)](chartlineage.png)
+
+::: notes
+
+Catalogs of data visualization have the tendency to treat every form as a category of one without drawing connections between them, which disguises how charts lead to other charts.
+
+:::
+
+### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts do {data-transition="fade-in slide-out"}
+
+<br />
+
+>All communication is evaluated based on content, but presuasive communication, which is all data visualization unless it is purely decorative, is rightly also evaluated based on effect.
+
+<span class="source">(Meeks 2018)</span>
+
+::: notes
+
+Ultimately, what charts do may be the one most important thing.
+
+:::
+
+## 3. The artefact goes social
 
 ### Data counseling
 
@@ -506,7 +619,14 @@ Device dependant
 
 Alerts
 
+## Epilogue
+
+### Resources
+
+http://oavis.steveharoz.com/
+
 ### References
+
 
 <span class="source">Source: Ihor Kovalyshyn (2017), [_When Scatter Plot Doesn't Work_](https://delta1epsilon.github.io/2017/When-Scatter-Plot-doesn%27t-work/)</span>
 
@@ -514,3 +634,11 @@ Alerts
 <span class="source">Source: Dominik Moritz and Danyel Fisher (2018), "Visualizing<br />  a Million Time Serieswith the Density Line Chart" [ arXiv:1808.06019v2](https://arxiv.org/pdf/1808.06019.pdf) [cs.HC]</span>
 
 Andy Kirk 2014 Null zero blank
+
+François Michonneau & Auriel Fournier (2018), “Data Carpentry: R for data analysis and visualization of Ecological Data.” doi: 10.5281/zenodo.569338, http://datacarpentry.org/R-ecology-lesson/
+
+Dan Meth (2009), "The Trilogy Meter" https://danmeth.myportfolio.com//post/77471620/my-trilogy-meter-1-in-a-series-of-pop-cultural
+
+Anthony Aragues (2018), _Visualizing Streaming Data_. O'Reilly Media
+
+### Thank you!
