@@ -45,6 +45,11 @@ slide-level: 3
 
 . . .
 
+<!-- Data Density
+An overall characteristic of the visual elements, used in combination, is data density. Data density refers to the number of useful data points you can get into an area 
+
+. . . --> 
+
 <table style="margin:2em auto;font-family:'Fira Mono';background-color:#eee;">
     <tr>
         <td style="border-bottom:0 solid white;text-align:right;padding:0 1em;">data points</td>
@@ -88,6 +93,8 @@ Some strategies to overcome these constraints:
 **2. Facets/small multiples** <span class="trend"></span>
 
 Hemen zerbait? erreferentziaren bat?
+
+https://plot.ly/ggplot2/facet/
 
 ### {data-transition="fade"}
 
@@ -147,11 +154,15 @@ Hemen zerbait? erreferentziaren bat?
 
 About real time... ?¿
 
+Streaming vs real time data
+
 ### Graphic constraints  {data-transition="fade"}
 
 1. Number of observations / marks
 
-Non-existing data
+<div class="center">
+Null / zero / blank 
+</div>
 
 ... elaborate
 
@@ -167,14 +178,12 @@ Unpublished papers:
 
 <span class="source left">Alex Kale, Francis Nguyen, Matthew Kay, Jessica Hullman (2019), "[Hypothetical Outcome Plots Help Untrained Observers Judge Trends in Ambiguous Data](https://idl.cs.washington.edu/papers/hops-trends/)", _IEEE Trans. Visualization & Comp. Graphics (Proc. InfoVis)_, 2019</span>
 
-<span class="source left">Jessica Hullman, Xiaoli Qiao, Michael Correll, Alex Kale, Matthew Kay (2019), "[In Pursuit of Error: A Survey of Uncertainty Visualization Evaluation](https://idl.cs.washington.edu/papers/uncertainty-eval-survey)", _IEEE Trans. Visualization & Comp. Graphics (Proc. InfoVis)_</span>
-
 ### Graphic constraints
 
 2. Number of variables
 
-- Reduce dimensionality (statistically)
-- Restructure dataset (from wide to tall): PCA, factors, clusters
+- Reduce dimensionality (statistically): PCA, factors, clusters
+- Restructure dataset (from wide to tall) (heatmaps)
 
 ### Graphic constraints  {data-transition="slide-in fade-out"}
 
@@ -218,20 +227,32 @@ A word of caution:
 
 _Making Data Visual_
 
-Graph thumbnails?
-
 <span class="source">
 Ricardo Langner, Ulrike Kister, Raimund Dachselt (2019). "[Multiple Coordinated Views at Large Displays for Multiple Users: Empirical Findings on User Behavior, Movements, and Distances](https://imld.de/en/research/research-projects/mcv-displaywall/)", _IEEE Transactions on Visualization and Computer Graphics_ 25(1) (InfoVis 2018, Berlin) [`10.1109/TVCG.2018.2865235`](https://doi.org/10.1109/TVCG.2018.2865235)</span>
 
 ### {data-background-iframe="https://www.youtube.com/embed/kiXMn2VPZek" data-transition="fade-in slide-out"}
 
-### Virtual Reality <span class="innovation"></span> {data-transition="slide-in fade-out"}
-
-### {data-background-iframe="https://www.youtube.com/embed/p4fB_OfoaZA" data-transition="fade"}
+### Beyond 2 dimensions <span class="innovation"></span> {data-transition="slide-in fade-out"}
 
 ### {data-background-iframe="https://www.youtube.com/embed/8j9r9JKIqww" data-transition="fade"}
 
-### Virtual Reality <span class="innovation"></span> {data-transition="fade-in slide-out"}
+<!--
+    Realidad virtual:
+    Still purely graphic, tú te metes en el gráfico.
+-->
+
+### {data-background-iframe="https://www.youtube.com/embed/p4fB_OfoaZA" data-transition="fade"}
+
+
+<!-- Realidad aumentada:
+    El gráfico se saca a la realidad y se coordina con elementos de la realidad física.
+-->
+
+### Beyond 2 dimensions <span class="innovation"></span> {data-transition="fade-in slide-out"}
+
+
+- Virtual Reality
+- Augmented reality
 
 References:
 
