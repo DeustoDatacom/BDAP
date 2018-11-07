@@ -5,3 +5,5 @@
 .source {font-size:.4em !important; text-align:right !important; font-family:"Roboto" !important; display:block;}
 
 .source.left { text-align:left !important; }
+
+h3 .pretitle { display:block; font-size:.3em; text-transform: uppercase; }
