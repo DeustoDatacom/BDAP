@@ -479,8 +479,6 @@ Unlike the implicit channel, the descriptive channel is active and purposeful (n
 
 ### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts say {data-transition="fade-in slide-out"}
 
-<br />
-
 >By being more explicit in our own understanding of what charts say and how we can systematically describe what they say, we can grow more capable of using the channels available in that expression to our advantage.
 
 <span class="source">(Meeks 2018)</span>
@@ -605,7 +603,131 @@ Ultimately, what charts do may be the one most important thing.
 
 ## 3. The artefact goes social
 
-### Data counseling
+### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="slide-in fade-out"}
+
+<br />
+
+>[...] brings domain expertise into the operationalization process to help inform decisions about good proxies as well as to uncover insights using the resulting visualizations.
+
+<span class="source">(Meyer & Fisher 2018)</span>
+
+
+### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
+
+Based on **interviews** (1) for
+
+>- gaining an understanding of the questions and data
+>- get feedback on proxies, **explorations** (2), and visualization **prototypes** (3)
+
+### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
+
+**1. Interviews**
+
+>The role of the interviewer is to ask questions that will guide the stakeholders toward elucidating the information necessary for working through an operationalization process and designing visualizations.
+
+<span class="source">(Meyer & Fisher 2018)</span>
+
+### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
+
+**1. Interviews**
+
+Identify stakeholders:
+
+>- analysts
+>- data producers
+>- gatekeepers
+>- decision makers
+>- connectors
+
+### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
+
+**1. Interviews**
+
+Require practice and experience.
+
+Semistructured: be prepared, but also be open.
+
+>- start with open ended questions (problem, data, context)
+>- use the conversation to search out the more abstract question
+
+::: notes
+
+unstructured: can uncover unknown needs and goals, but it can take a significant amount of time to get to anything useful.
+
+structured: while efficient, leave little room for discovering new insights.
+
+:::
+
+### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
+
+**1. Interviews**
+
+Use traditional conversation / interpersonal communication skills to prevent dead ends: keep them talking
+
+>- rephrase responses back to the stakeholder
+>- ask the same or similar questions in different ways
+>- explore a completely different conversational topic
+
+### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
+
+**1. Interviews**
+
+Contextual interviews
+
+>- take place in the stakeholder's work environment
+>- consist of demonstrations of the tools and data inspection methods currently in use
+
+::: notes
+
+often starts by asking the stakeholder to either walk through a specific analysis task they have already performed or conduct someof their work for that day with the interviewer present. The stakeholder talks through each step they are taking.
+
+:::
+
+### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
+
+**2. Data exploration**
+
+Look to the data as early as possible.
+
+???
+
+### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
+
+**3. Rapid prototyping**
+
+>[...] is a process of trying out many visualization ideas as quickly as possible and getting feedback from stakeholders on their efficacy.
+
+<span class="source">(Meyer & Fisher 2018)</span>
+
+### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
+
+**3. Rapid prototyping**
+
+&ne; _fast_ data visualization
+
+&ap; agile/lean methodologies and user-centered design
+
+### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
+
+**3. Rapid prototyping**
+
+![Prototypes range from low-fidelity sketches to high-fidelity working models (Meyer & Fisher 2018)](prototypes.png)
+
+::: notes
+
+low-fi: sketched on paper or on a whiteboard, digital mockups that may include some controls for explaining interaction ideas (slides). Can incorporate charts generated in Excel or Tableau with fake or sampled data. Great for communicatingthe gist of an idea in an interview, fast and easy to produce. Rapidly establish whether the visualizationd designer is on the same page as the stakeholders.
+
+hi-fi: custom visualizations which must be created from scratch. Largely contain the core functionality. Meant to be thrown away, the point is not to worry about the code other than to confirm that ideas can work.
+
+:::
+
+### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
+
+**3. Rapid prototyping**
+
+Prototypes are made to obtain feedback on them: get to the stakeholders early and often.
+
+Focus not on whether they like it or not, but rather on **what the visualization can and cannot do** (contextual interview where the stakeholder uses the visualization).
 
 ### Responsive data visualization
 
@@ -628,10 +750,11 @@ http://oavis.steveharoz.com/
 ### References
 
 
-<span class="source">Source: Ihor Kovalyshyn (2017), [_When Scatter Plot Doesn't Work_](https://delta1epsilon.github.io/2017/When-Scatter-Plot-doesn%27t-work/)</span>
+<div class="source">
 
+Ihor Kovalyshyn (2017), [_When Scatter Plot Doesn't Work_](https://delta1epsilon.github.io/2017/When-Scatter-Plot-doesn%27t-work/)
 
-<span class="source">Source: Dominik Moritz and Danyel Fisher (2018), "Visualizing<br />  a Million Time Serieswith the Density Line Chart" [ arXiv:1808.06019v2](https://arxiv.org/pdf/1808.06019.pdf) [cs.HC]</span>
+Dominik Moritz and Danyel Fisher (2018), "Visualizing a Million Time Serieswith the Density Line Chart" [ arXiv:1808.06019v2](https://arxiv.org/pdf/1808.06019.pdf) [cs.HC]
 
 Andy Kirk 2014 Null zero blank
 
@@ -640,5 +763,9 @@ François Michonneau & Auriel Fournier (2018), “Data Carpentry: R for data ana
 Dan Meth (2009), "The Trilogy Meter" https://danmeth.myportfolio.com//post/77471620/my-trilogy-meter-1-in-a-series-of-pop-cultural
 
 Anthony Aragues (2018), _Visualizing Streaming Data_. O'Reilly Media
+
+Miriah Meyer & Danyel Fisher (2018), _Making Data Visual_. O'Reilly Media
+
+</div>
 
 ### Thank you!
