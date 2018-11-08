@@ -1,7 +1,8 @@
 ---
 title: <span class="small">Data visualization</span>
 pagetitle: Data visualization
-subtitle: From micro to macro, with context
+subtitle: European Data Incubator, Bilbao
+date: 9<small>th</small> November 2018
 author: Mikel Madina & Miren Berasategi
 theme: deusto
 deusto: TRUE
@@ -787,9 +788,104 @@ Prototypes are made to obtain feedback on them: get to the stakeholders early an
 
 Focus not on whether they like it or not, but rather on **what the visualization can and cannot do** (contextual interview where the stakeholder uses the visualization).
 
-### Responsive data visualization
+### <span class="pretitle">3. The artefact goes social</span> Responsive data visualization {data-transition="fade"}
 
-The other "side" of adaption is on the side of the user.
+>Responsive web design, and responsive data visualization are not simply a way to make our content accessible on smaller screens. We need to build an ergonomic web that feels natural regardless of device type.
+
+<span class="source">(Hinderman 2018)</span>
+
+
+### <span class="pretitle">3. The artefact goes social</span> Responsive data visualization {data-transition="fade"}
+
+Unknowns require adaptability.
+
+>- the context in which **the user** is trying to consume the visualization
+>- changes in **the data** that is being displayed
+
+::: notes
+
+the user: core of responsive web design as a whole
+
+the data: unique to data visualization. This is what makes a visualization FULLY responsive _vs._ simply scaling them at different viewport sizes, like an image.
+
+>[...] every single thing that you can do to make your visualization more clear, more usable, or more communicative is a reaction to either the context in which the user is trying to consume it, or a change in the data being displayed.
+
+<span class="source">(Hinderman 2018, p.317)</span>
+
+:::
+
+### <span class="pretitle">3. The artefact goes social</span> Responsive data visualization {data-transition="fade"}
+
+**Output side (the client)**
+
+Making things work in all screen types by redrawing charts to fit its container. 
+
+Match CSS breakpoints + add any new ones as the content requires: group data to fit (trade-off precision for reduced rendering complexity and performance).
+
+::: notes
+
+With a combination of CSS and D3.
+
+Breakpoints: build for your smallest supported screen: then, as you find a spot at which it makes sense to redraw, create a new breakpoint there.
+
+:::
+
+### <span class="pretitle">3. The artefact goes social</span> Responsive data visualization {data-transition="fade"}
+
+**Input side (the data)**
+
+Adapting at breakpoints. No need to just redraw the exact same elements:
+
+>As long as the message being conveyed by the data is the same, and the point you're trying to prove is always present, you should prove it with as much firepower as you have available.
+
+<span class="source">(Hinderman 2018, p.361)</span>
+
+::: notes
+
+We need to KNOW 
+
+- what is the message being conveyed by the data (what does it SAY)
+- what is the point you're trying to prove (what does it MEAN)
+
+:::
+
+### <span class="pretitle">3. The artefact goes social</span> Responsive data visualization {data-transition="fade"}
+
+**Input side (the data)**
+
+Adapting at interaction points. 
+
+>[...] present a rational default but enable users to dig into more complex or specific layers of data when the device's capabilities limit the presentation of both at the same time.
+
+<span class="source">(Hinderman 2018, p.362)</span>
+
+::: notes
+
+The most crucial and digestive information should be prioritised, but interaction should enable more granularity.
+
+:::
+
+### <span class="pretitle">3. The artefact goes social</span> Responsive data visualization {data-transition="fade"}
+
+![Linear and radial temperature range charts designed for mobile phone displays (Brehmer _et al._ 2019)](temperature-mobile.png){height="350"}
+
+::: notes
+
+In adapting to different devices, perception of different kinds of charts may differ. 
+
+:::
+
+### {data-background-iframe="https://www.youtube.com/embed/MwJmjTBfOx0" data-transition="fade"}
+
+::: notes
+
+a vast majority of smartwatch interactions last under 5 s. Some chart types are not apropriate for certain devices.
+
+:::
+
+### <span class="pretitle">3. The artefact goes social</span> Responsive data visualization {data-transition="fade"}
+
+The other "side" of adaptation is on the side of the user.
 
 Data served
 
@@ -808,6 +904,8 @@ Example: sports tracker on watch vs. phone vs. computer
 ### Resources
 
 http://oavis.steveharoz.com/
+
+http://ieeevis.org/year/2018/welcome
 
 ### References
 
@@ -828,6 +926,17 @@ Anthony Aragues (2018), _Visualizing Streaming Data_. O'Reilly Media
 
 Miriah Meyer & Danyel Fisher (2018), _Making Data Visual_. O'Reilly Media
 
+Tanja Blascheck, Lonni Besançon, Anastasia Bezerianos, Bongshin Lee, Petra Isenberg (2019). "Glanceable Visualization: Studies of Data Comparison Performance on Smartwatches". _IEEE Transactions on Visualization and Computer Graphics_ 25(1)
+
+
+Matthew Brehmer, Bongshin Lee, Petra Isenberg, Eun Kyoung Choe (2019). "[Visualizing Ranges over Time on Mobile Phones: A Task-Based Crowdsourced Evaluation](https://www.microsoft.com/en-us/research/publication/visualizing-ranges-over-time-on-mobile-phones-a-task-based-crowdsourced-evaluation/)". _IEEE Transactions on Visualization and Computer Graphics_ 25(1)
+
 </div>
 
 ### Thank you!
+
+@DeustoKomunika
+@DeustoData
+
+@mberasategi
+@neregauzak

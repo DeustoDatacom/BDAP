@@ -7,3 +7,6 @@
 .reveal .source.left { text-align:left !important; }
 
 h3 .pretitle { display:block; font-size:.3em; text-transform: uppercase; }
+
+p.author { font-size:.8em; }
+p.date { font-size:.6em; font-style:italic; }
