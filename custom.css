@@ -6,6 +6,7 @@
 .reveal span.source {text-align:right !important; display:block;}
 .reveal .source.left { text-align:left !important; }
 
+h1 { font-size:2em !important; }
 h3 .pretitle { display:block; font-size:.3em; text-transform: uppercase; }
 
 p.author { font-size:.8em; }
