@@ -130,7 +130,7 @@ Instead of selecting by line, allows the user to select by pattern
 
 Facets, trellis, small multiples.
 
-![Example of small multiples: The Trilogy Meter (Meth 2009)](smallmultiples2.jpg){height="300"}
+![Example of small multiples: The Trilogy Meter (Meth 2009)](img/smallmultiples2.jpg){height="300"}
 
 ::: notes
 
@@ -147,7 +147,7 @@ Small multiples are economical: once viewers understand the design of one [chart
 
 . . .
 
-![[ggExtra](https://daattali.com/shiny/ggExtra-ggMarginal-demo/), adding marginal histograms to ggplot2 (by Dean Attali)](ggplot-extra.png){height="350"}
+![[ggExtra](https://daattali.com/shiny/ggExtra-ggMarginal-demo/), adding marginal histograms to ggplot2 (by Dean Attali)](img/ggplot-extra.png){height="350"}
 
 ::: notes
 
@@ -163,7 +163,7 @@ adding redundant views on the same data
 
 . . .
 
-![Clearly overplotted scatterplot (Kovalyshyn 2017)](scatterplot1.png){height="325"}
+![Clearly overplotted scatterplot (Kovalyshyn 2017)](img/scatterplot1.png){height="325"}
 
 ### <span class="pretitle">1. Data visualisation as artefact</span> The atomic level  {data-transition="fade"}
 
@@ -171,7 +171,7 @@ adding redundant views on the same data
 
 - Escaping overplotting in scatterplots <span class="trend"></span>
 
-![Using transparency is not helpful (Kovalyshyn 2017)](scatterplot2.png){height="325"}
+![Using transparency is not helpful (Kovalyshyn 2017)](img/scatterplot2.png){height="325"}
 
 ### <span class="pretitle">1. Data visualisation as artefact</span> The atomic level  {data-transition="fade"}
 
@@ -179,7 +179,7 @@ adding redundant views on the same data
 
 - Escaping overplotting in scatterplots <span class="trend"></span>
 
-![Now we can **see** density (Kovalyshyn 2017)](scatterplot-hexbin.png){height="325"}
+![Now we can **see** density (Kovalyshyn 2017)](img/scatterplot-hexbin.png){height="325"}
 
 ::: notes
 
@@ -195,7 +195,7 @@ color is in logaritmic scale.
 
 - Timelines <span class="innovation"></span>
 
-![DenseLines, a density representation of many time series as a heatmap (Moritz & Fisher 2018)](stocks_lines.png){height="300"}
+![DenseLines, a density representation of many time series as a heatmap (Moritz & Fisher 2018)](img/stocks_lines.png){height="300"}
 
 ::: notes
 
@@ -209,7 +209,7 @@ a stock market dataset of 3,500 historical New York Stock Exchange closing price
 
 - Timelines <span class="innovation"></span>
 
-![DenseLines, a density representation of many time series as a heatmap (Moritz & Fisher 2018)](stocks.png){height="300"}
+![DenseLines, a density representation of many time series as a heatmap (Moritz & Fisher 2018)](img/stocks.png){height="300"}
 
 ::: notes
 
@@ -309,13 +309,13 @@ invisible design
 Communicating uncertainty, projections,  
 and other non-factual data is challenging.
 
-![Uncertainty visualisations tested in experiments (Kale _et al._ 2019)](hop.gif){height="300"} 
+![Uncertainty visualisations tested in experiments (Kale _et al._ 2019)](img/hop.gif){height="300"} 
 
 ### <span class="pretitle">1. Data visualisation as artefact</span> Number of variables <span class="trend"></span>
 
-![&nbsp;](munzner-5.2.png){width="400"}
+![&nbsp;](img/munzner-5.2.png){width="400"}
 
-![Visual marks and channels (Munzner 2014)](munzner-5.3.png){width="400" style="margin-top:-25px;"}
+![Visual marks and channels (Munzner 2014)](img/munzner-5.3.png){width="400" style="margin-top:-25px;"}
 
 ::: notes
 
@@ -349,16 +349,16 @@ A word of caution:
 
 ### <span class="pretitle">1. Data visualisation as artefact</span> Generating new idioms <span class="innovation"></span> {data-transition="fade"}
 
-![Horizon charts (Heer 2009)](horizonchart.png)
+![Horizon charts (Heer 2009)](img/horizonchart.png)
 
 ### <span class="pretitle">1. Data visualisation as artefact</span> Generating new idioms <span class="innovation"></span> {data-transition="fade"}
 
-![Choropleth maps with `tricolore` (Schöley 2018)](tricolore.png){height="325"
+![Choropleth maps with `tricolore` (Schöley 2018)](img/tricolore.png){height="325"
 }
 
 ### <span class="pretitle">1. Data visualisation as artefact</span> Generating new idioms <span class="innovation"></span> {data-transition="fade"}
 
-![Flame graphs (Gregg 2016)](flamegraph.svg){height="325"}
+![Flame graphs (Gregg 2016)](img/flamegraph.svg){height="325"}
 
 ### <span class="pretitle">1. Data visualisation as artefact</span> Multiple Linked Views (MLV) <span class="trend"></span> <span class="innovation"></span> {data-transition="slide-in fade-out"}
 
@@ -401,7 +401,7 @@ Realidad aumentada: El gráfico se saca a la realidad y se coordina con elemento
 
 ### <span class="pretitle">1. Data visualisation as artefact</span> Other senses <span class="innovation"></span>
 
-![Sonification example and [demo](https://inclusive.interactivethings.io/#/histogram/sonification) (Guillemot 2018)](sound.jpg){height="400"}
+![Sonification example and [demo](https://inclusive.interactivethings.io/#/histogram/sonification) (Guillemot 2018)](img/sound.jpg){height="400"}
 
 ::: notes
 
@@ -413,7 +413,7 @@ Sound: improves accesibility. Keyboard navigation enables sound cues for each re
 
 ### <span class="pretitle">1. Data visualisation as artefact</span> Other senses <span class="innovation"></span>
 
-![_Smell necklace_ designed to be used with an immersive VR display ([via Twitter](https://twitter.com/NElmqvist/status/1055370456528773120))](smell-necklace.png){height="400"}
+![_Smell necklace_ designed to be used with an immersive VR display ([via Twitter](https://twitter.com/NElmqvist/status/1055370456528773120))](img/smell-necklace.png){height="400"}
 
 # 2. Data visualisation as <br />a tool for communication {data-transition="slide-in fade-out"}
 
@@ -517,9 +517,9 @@ there is manufacture = subjectivity from the first moment of the data coding/gat
 <table style="margin-top:-25px;">
     <tr>
         <td>
-        ![Most _default_ representation of an histogram](iraq-redesigned.png){height="450"}
+        ![Most _default_ representation of an histogram](img/iraq-redesigned.png){height="450"}
         </td>
-        <td class="fragment">![Original infographic by Simon Scarr (Meeks 2018)](iraq.png){height="450"}</td>
+        <td class="fragment">![Original infographic by Simon Scarr (Meeks 2018)](img/iraq.png){height="450"}</td>
     </tr>
 </table>
 
@@ -621,7 +621,7 @@ It is important to provide background about the data sources, to enable checking
 
 **Historically**
 
-![A Minnesota Department of Health chart on changing obesity rates that relies on BMI will still be around long after we develop a more sophisticated measure of health and yet nowhere on this chart does “BMI” appear (Meeks 2018)](obesity.png)
+![A Minnesota Department of Health chart on changing obesity rates that relies on BMI will still be around long after we develop a more sophisticated measure of health and yet nowhere on this chart does “BMI” appear (Meeks 2018)](img/obesity.png)
 
 ### <span class="pretitle">2. Data visualisation as a tool for communication</span> What charts mean {data-transition="fade"}
 
@@ -653,7 +653,7 @@ Identify and emphasize the insights that the readers might expect.
 
 . . .
 
-![A simple line chart (left) and the features of that line chart (right)<br /> which may be considered insights by an audience (Meeks 2018)](charts-do.png){height="200"}
+![A simple line chart (left) and the features of that line chart (right)<br /> which may be considered insights by an audience (Meeks 2018)](img/charts-do.png){height="200"}
 
 ::: notes
 
@@ -693,14 +693,14 @@ Languages are live things, that evolve over time, and require breakthrough.
 
 ### <span class="pretitle">2. Data visualisation as a tool for communication</span> What charts do {data-transition="fade"}
 
-![This example of a connected scatterplot, used in production at Netflix, has built into it a link to an animated explanation of how to read the new chart along with more familiar charts around it to reduce friction (Meeks 2018)](connected-scatterplot.png){height="350"}
+![This example of a connected scatterplot, used in production at Netflix, has built into it a link to an animated explanation of how to read the new chart along with more familiar charts around it to reduce friction (Meeks 2018)](img/connected-scatterplot.png){height="350"}
 
 
 ### <span class="pretitle">2. Data visualisation as a tool for communication</span> What charts do {data-transition="fade"}
 
 **Create new charts**
 
-![Imaginary genealogy for charts with scatterplots as a common ancestor (Meeks 2018)](genealogy.png){height="350"}
+![Imaginary genealogy for charts with scatterplots as a common ancestor (Meeks 2018)](img/genealogy.png){height="350"}
 
 ::: notes
 
@@ -850,7 +850,7 @@ NOT to be confused with **fast** dataviz
 
 **Rapid prototyping**
 
-![Prototypes range from low-fidelity sketches to high-fidelity working models (Meyer & Fisher 2018)](prototypes.png)
+![Prototypes range from low-fidelity sketches to high-fidelity working models (Meyer & Fisher 2018)](img/prototypes.png)
 
 ::: notes
 
@@ -945,7 +945,7 @@ The most crucial and digestive information should be prioritised, but interactio
 
 ### <span class="pretitle">3. The artefact goes social</span> Responsive data visualisation {data-transition="fade"}
 
-![Linear and radial temperature range charts designed for mobile phone displays (Brehmer _et al._ 2019)](temperature-mobile.png){height="350"}
+![Linear and radial temperature range charts designed for mobile phone displays (Brehmer _et al._ 2019)](img/temperature-mobile.png){height="350"}
 
 ::: notes
 
@@ -1052,8 +1052,8 @@ This presentation is available at
 
 <hr style="margin-top:2em; border-color:#999; border-top:none;" />
 
-![](deustokomunika-logo.png){width="50" style="vertical-align:middle;"}
-[&#64; DeustoKomunika](http://twitter.com/deustokomunika)  ![](deustodatacom-logo.png){width="50" style="vertical-align:middle;padding-left:25px;"}
+![](img/deustokomunika-logo.png){width="50" style="vertical-align:middle;"}
+[&#64; DeustoKomunika](http://twitter.com/deustokomunika)  ![](img/deustodatacom-logo.png){width="50" style="vertical-align:middle;padding-left:25px;"}
 [&#64; DeustoData](http://twitter.com/deustodata) [&#64; mberasategi](http://twitter.com/mberasategi){style="padding-left:25px;"} [&#64; neregauzak](https://twitter.com/neregauzak){style="padding-left:25px;"}
 
 </div>
@@ -1064,9 +1064,9 @@ This presentation is available at
 
 <div style="text-align:center;margin-top:3.5em;">
 
-![](cc/cc.logo.png){height="50px" style="display:inline-block;margin-right:2em;"}
-![](cc/by.png){height="50px" style="display:inline-block;"}
-![](cc/sa.png){height="50px" style="display:inline-block;"}
+![](img/cc/cc.logo.png){height="50px" style="display:inline-block;margin-right:2em;"}
+![](img/cc/by.png){height="50px" style="display:inline-block;"}
+![](img/cc/sa.png){height="50px" style="display:inline-block;"}
 
 </div>
 
