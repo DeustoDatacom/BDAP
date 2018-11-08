@@ -945,6 +945,26 @@ The most crucial and digestive information should be prioritised, but interactio
 
 ### <span class="pretitle">3. The artefact goes social</span> Responsive data visualisation {data-transition="fade"}
 
+Different views on heartreate depending on device:
+
+![Garmin watch](img/garmin-watch.jpg){width="200"} 
+
+### <span class="pretitle">3. The artefact goes social</span> Responsive data visualisation {data-transition="fade"}
+
+Different views on heartreate depending on device:
+
+![Garmin Android app, portrait and landscape views](img/garmin-mobile.png){height="350"}
+
+### <span class="pretitle">3. The artefact goes social</span> Responsive data visualisation {data-transition="fade"}
+
+Different views on heartreate depending on device:
+
+![Garmin website from desktop](img/garmin-desktop.gif)
+
+
+
+### <span class="pretitle">3. The artefact goes social</span> Responsive data visualisation {data-transition="fade"}
+
 ![Linear and radial temperature range charts designed for mobile phone displays (Brehmer _et al._ 2019)](img/temperature-mobile.png){height="350"}
 
 ::: notes
