@@ -7,7 +7,30 @@ author: Mikel Madina & Miren Berasategi
 theme: deusto
 deusto: TRUE
 slide-level: 3
+menu: TRUE
 ...
+
+### 
+
+<div style="font-family:'Roboto';font-size:.6em;">
+
+
+1. <span style="font-size:1.3em;">Data visualization as artefact</span>
+    + The atomic level
+    + Number of variables
+    + Generating new idioms
+    + Multiple Linked Views
+    + Beyond 2 dimensions
+    + Senses and control interfaces
+2.  <div style="font-size:1.3em;padding-top:.5em;">Data visualization as a tool for communication</div>
+    + What charts say
+    + What charts mean
+    + What charts do
+3. <div style="font-size:1.3em;padding-top:.5em;">The artefact goes social</div>
+    + Data counseling
+    + Responsive data visualization
+
+</div>
 
 ## 1. Data visualization as artefact  {data-transition="slide-in fade-out"}
 
@@ -19,15 +42,11 @@ slide-level: 3
  
 <span style="font-size:1.5em;">artefact </span> <small style="vertical-align:middle !important">(<em>US</em> <strong>artifact</strong>)</small> <small style="vertical-align:middle !important;font-weight:bold;color:green">noun</small></blockquote>
 
-. . . 
-
 <blockquote markdown=1 style="font-size:.7em;font-style:normal;">
 <small>1</small> An object made by a human being, typically one of cultural or historical interest.  
 
 <em>‘gold and silver artefacts’</em>
 </blockquote>
-
-. . .
 
 <blockquote markdown=1 style="font-size:.7em;font-style:normal;">
 
@@ -36,20 +55,20 @@ slide-level: 3
 <em>‘the curvature of the surface is an artefact of the wide-angle view’</em>
 </blockquote>
 
-. . . 
-
 <span class="source">The Oxford Dictionary of English</span>
 
 ### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="slide-in fade-out"}
 
-Number of observations &rarr; marks
+. . .
+
+<div class="center">
+no. of observations &rarr; marks
+</div>
 
 . . .
 
-<!-- Data Density
-An overall characteristic of the visual elements, used in combination, is data density. Data density refers to the number of useful data points you can get into an area 
+Maximum data density is `1:1`, and this is not usually the case:
 
-. . . --> 
 
 <table style="margin:2em auto;font-family:'Fira Mono';background-color:#eee;">
     <tr>
@@ -62,15 +81,22 @@ An overall characteristic of the visual elements, used in combination, is data d
     </tr>
 </table>
 
-. . .
+::: notes
+
+Data Density
+An overall characteristic of the visual elements, used in combination, is data density. Data density refers to the number of useful data points you can get into an area.
 
 In a picture of 1000 x 1000 pixels, the maximum of observations to fit is 10<sup><small>6</small></sup> (1 million). How big is that?
 
+More than 1 pixel is used to represent each data point, + complimentary pixels for titles, labels, white space.
+
+:::
+
 ### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
 
-Some strategies to overcome these constraints:
+Some strategies to overcome this constraint:
 
->1. Filter
+>1. Filter observations
 >2. Split data into multiple charts
 >3. Augmenting visualizations
 >4. Densify
@@ -85,35 +111,35 @@ Some strategies to overcome these constraints:
 
 ::: notes
 
-innovation in the part of how the useri nteracts with the data
+by design, using criteria present in the data.
+
+by the user, requires interaction / UX design
+
+innovation in the part of how the user interacts with the data
 
 :::
 
 ### {data-transition="fade" data-background-iframe="https://www.youtube.com/embed/VU117h6wT6w?controls=0&amp;start=576"}
 
-### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
+::: notes
 
-**2. Split data into multiple charts** <span class="trend"></span>
+Instead of selecting by line, allows the user to select by pattern
 
-Facets, trellis, small multiples
-
-### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
-
-**2. Split data into multiple charts** <span class="trend"></span>
-
-![Example facet visualization of the observation of animals<br/> by species and sex (Michonneau & Fournier 2018)](facets.png){height="325"}
+:::
 
 ### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
 
 **2. Split data into multiple charts** <span class="trend"></span>
 
-![Example of small multiples: The Trilogy Meter (Meth 2009)](smallmultiples2.jpg){height="350"}
+Facets, trellis, small multiples.
+
+![Example of small multiples: The Trilogy Meter (Meth 2009)](smallmultiples2.jpg){height="300"}
 
 ::: notes
 
 Small multiples are sets of charts of the same type, with the same scale, presented together at a small size and with minimal detail, usually in a grid of some kind. The term was at least popularized by Edward Tufte, appearing first in his Visual Display of Quantitative Information in 1983. He says of them:
 
-    Small multiples are economical: once viewers understand the design of one [chart], they have immediate access to the data in all the other [charts]… as the eye moves from one [chart to the next, the consistency of the design allows viewers to focus on changes in the data rather than on changes in graphical design.
+Small multiples are economical: once viewers understand the design of one [chart], they have immediate access to the data in all the other [charts]… as the eye moves from one [chart to the next, the consistency of the design allows viewers to focus on changes in the data rather than on changes in graphical design.
 
 :::
 
@@ -125,6 +151,12 @@ Small multiples are sets of charts of the same type, with the same scale, presen
 . . .
 
 ![[ggExtra](https://daattali.com/shiny/ggExtra-ggMarginal-demo/), adding marginal histograms to ggplot2 (by Dean Attali)](ggplot-extra.png){height="350"}
+
+::: notes
+
+adding redundant views on the same data
+
+:::
 
 ### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
 
@@ -152,15 +184,41 @@ Small multiples are sets of charts of the same type, with the same scale, presen
 
 ![Now we can **see** density (Kovalyshyn 2017)](scatterplot-hexbin.png){height="325"}
 
+::: notes
+
+Actually implies statistical simplification.
+
+color is in logaritmic scale.
+
+:::
+
 ### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
 
 **4. Densify**
 
 - Timelines <span class="innovation"></span>
 
-step-by-step
+![DenseLines, a density representation of many time series as a heatmap (Moritz & Fisher 2018)](stocks_lines.png){height="300"}
 
-![DenseLines, a density representation of many time series as a heatmap (Moritz & Fisher)](denselines.png){height="325"}
+::: notes
+
+a stock market dataset of 3,500 historical New York Stock Exchange closing prices.
+
+:::
+
+### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
+
+**4. Densify**
+
+- Timelines <span class="innovation"></span>
+
+![DenseLines, a density representation of many time series as a heatmap (Moritz & Fisher 2018)](stocks.png){height="300"}
+
+::: notes
+
+Dense clusters of lines are easy to spot in blue, while bright yellow shows areas with few stock price lines. The drop that came with the financial crisis in 2008 is clearly visible. Similarly, we can see two dense bands of stock values around $15 and $25, showing that companies (or customers) tend toward round stock prices.
+
+:::
 
 ### <span class="pretitle">1. Data visualization as artefact</span> The atomic level  {data-transition="fade"}
 
@@ -295,12 +353,9 @@ A word of caution:
 
 ### <span class="pretitle">1. Data visualization as artefact</span> Generating new idioms <span class="innovation"></span> {data-transition="fade"}
 
-![Flame graphs](flamegraph.svg){height="325"
-}
+![Flame graphs](flamegraph.svg){height="325"}
  
 <span class="source">Source: Brendan Gregg (2016), "[The Flame Graph](https://queue.acm.org/detail.cfm?id=2927301)". _ACM Queue_ Vol. 14, No. 2</span>
-
-### {data-background-image="flamegraph.svg" data-transition="fade-in slide-out"}
 
 ### <span class="pretitle">1. Data visualization as artefact</span> Multiple Linked Views (MLV) <span class="trend"></span> <span class="innovation"></span> {data-transition="slide-in fade-out"}
 
@@ -350,12 +405,21 @@ Ronell Sicat, Jiabao Li. [_DXR: A Toolkit for Building Immersive Data Visualizat
 <span class="source left">
 Christophe Hurter, Nathalie Henry Riche, Steven M. Drucker, Maxime Cordeil, Richard Alligier, Romain Vuillemot (2018), "[FiberClay: Sculpting Three Dimensional Trajectories to Reveal Structural Insights](http://recherche.enac.fr/~hurter/FiberClay.html)", IEEE Transactions on Visualization and Computer Graphics_ 25(1) (InfoVis 2018, Berlin)</span>
 
-### <span class="pretitle">1. Data visualization as artefact</span> Senses and control interfaces <span class="innovation"></span>
+### <span class="pretitle">1. Data visualization as artefact</span> Other senses <span class="innovation"></span>
 
-(How is this _visualization_?)
+![Sonification example and [demo](https://inclusive.interactivethings.io/#/histogram/sonification) (Guillemot 2018)](sound.jpg){height="400"}
 
-- Sound
-- _smell necklace_ https://twitter.com/NElmqvist/status/1055370456528773120
+::: notes
+
+Not exactly visualization
+
+Sound: 
+
+:::
+
+### <span class="pretitle">1. Data visualization as artefact</span> Other senses <span class="innovation"></span>
+
+![_Smell necklace_ designed to be used with an immersive VR display ([via Twitter](https://twitter.com/NElmqvist/status/1055370456528773120))](smell-necklace.png){height="400"}
 
 ## 2. Data visualization as a tool for communication {data-transition="slide-in fade-out"}
 
@@ -563,7 +627,7 @@ It is important to provide background about the data sources, to enable checking
 
 **Historically**
 
-![Obesity chart](obesity.png)
+![A Minnesota Department of Health chart on changing obesity rates that relies on BMI will still be around long after we develop a more sophisticated measure of health and yet nowhere on this chart does “BMI” appear (Meeks 2018)](obesity.png)
 
 ### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts mean {data-transition="fade"}
 
@@ -591,9 +655,17 @@ The most important thing about a chart is its impact.
 
 **Provide insights**
 
-Identify and emphasize the insights that the readers might expect
+Identify and emphasize the insights that the readers might expect.
 
-![simple line chart and highlighted features of the line chart](insight.png)
+. . .
+
+![A simple line chart (left) and the features of that line chart (right)<br /> which may be considered insights by an audience (Meeks 2018)](charts-do.png){height="200"}
+
+::: notes
+
+In this example those consist of the maxima/minima of the data (whether as an extent or as individual features), volume of the total data represented, points of interest, volatility of change or overall trend in the direction of change.
+
+:::
 
 ### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts do {data-transition="fade"}
 
@@ -617,8 +689,6 @@ Understanding how a particular chart was an effective piece of evidence or motiv
 
 <span class="source">(Meeks 2018)</span>
 
-(Netflix connected scatterplot chart?)
-
 ::: notes
 
 Languages are live things, that evolve over time, and require breakthrough.
@@ -629,13 +699,20 @@ Languages are live things, that evolve over time, and require breakthrough.
 
 ### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts do {data-transition="fade"}
 
+![This example of a connected scatterplot, used in production at Netflix, has built into it a link to an animated explanation of how to read the new chart along with more familiar charts around it to reduce friction (Meeks 2018)](connected-scatterplot.png){height="350"}
+
+
+### <span class="pretitle">2. Data visualization as a tool for communication</span> What charts do {data-transition="fade"}
+
 **Create new charts**
 
-![Imaginary genealogy for charts with scatterplots as a common ancestor (Meeks 2018)](chartlineage.png)
+![Imaginary genealogy for charts with scatterplots as a common ancestor (Meeks 2018)](genealogy.png){height="350"}
 
 ::: notes
 
 Catalogs of data visualization have the tendency to treat every form as a category of one without drawing connections between them, which disguises how charts lead to other charts.
+
+chart lineage
 
 :::
 
@@ -676,11 +753,11 @@ proxies = the best indicator to answer to the questions that you have.
 Based on **interviews** (1) for
 
 >- gaining an understanding of the questions and data
->- get feedback on proxies, **explorations** (2), and visualization **prototypes** (3)
+>- get feedback on proxies, explorations, and visualization **prototypes** (2)
 
 ### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
 
-**1. Interviews**
+**Interviews**
 
 >The role of the interviewer is to ask questions that will guide the stakeholders toward elucidating the information necessary for working through an operationalization process and designing visualizations.
 
@@ -688,7 +765,7 @@ Based on **interviews** (1) for
 
 ### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
 
-**1. Interviews**
+**Interviews**
 
 Identify stakeholders:
 
@@ -700,7 +777,7 @@ Identify stakeholders:
 
 ### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
 
-**1. Interviews**
+**Interviews**
 
 Require practice and experience.
 
@@ -719,7 +796,7 @@ structured: while efficient, leave little room for discovering new insights.
 
 ### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
 
-**1. Interviews**
+**Interviews**
 
 Use traditional conversation / interpersonal communication skills to prevent dead ends: keep them talking
 
@@ -729,7 +806,7 @@ Use traditional conversation / interpersonal communication skills to prevent dea
 
 ### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
 
-**1. Interviews**
+**Interviews**
 
 Contextual interviews
 
@@ -744,15 +821,7 @@ often starts by asking the stakeholder to either walk through a specific analysi
 
 ### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
 
-**2. Data exploration**
-
-Look to the data as early as possible.
-
-???
-
-### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
-
-**3. Rapid prototyping**
+**Rapid prototyping**
 
 >[...] is a process of trying out many visualization ideas as quickly as possible and getting feedback from stakeholders on their efficacy.
 
@@ -760,15 +829,32 @@ Look to the data as early as possible.
 
 ### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
 
-**3. Rapid prototyping**
+**Rapid prototyping**
+
+<div class="center">
 
 &ne; _fast_ data visualization
 
-&ap; agile/lean methodologies and user-centered design
+</div>
+
+. . .
+
+<div class="center">
+
+&ap; agile/lean methodologies  
+and user-centered design
+
+</div>
+
+::: notes
+
+NOT to be confused with **fast** dataviz
+
+:::
 
 ### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
 
-**3. Rapid prototyping**
+**Rapid prototyping**
 
 ![Prototypes range from low-fidelity sketches to high-fidelity working models (Meyer & Fisher 2018)](prototypes.png)
 
@@ -782,7 +868,7 @@ hi-fi: custom visualizations which must be created from scratch. Largely contain
 
 ### <span class="pretitle">3. The artefact goes social</span> Data counseling {data-transition="fade"}
 
-**3. Rapid prototyping**
+**Rapid prototyping**
 
 Prototypes are made to obtain feedback on them: get to the stakeholders early and often.
 
@@ -930,6 +1016,8 @@ Tanja Blascheck, Lonni Besançon, Anastasia Bezerianos, Bongshin Lee, Petra Isen
 
 
 Matthew Brehmer, Bongshin Lee, Petra Isenberg, Eun Kyoung Choe (2019). "[Visualizing Ranges over Time on Mobile Phones: A Task-Based Crowdsourced Evaluation](https://www.microsoft.com/en-us/research/publication/visualizing-ranges-over-time-on-mobile-phones-a-task-based-crowdsourced-evaluation/)". _IEEE Transactions on Visualization and Computer Graphics_ 25(1)
+
+Luc Guillemot (2018), "[How Does This Data Sound?]https://blog.interactivethings.com/how-does-this-data-sound-945ed27a1a95)"
 
 </div>
 
