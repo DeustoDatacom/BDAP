@@ -5,7 +5,8 @@
 .reveal .source { font-size:.4em !important;  font-family:"Roboto", "Montserrat", "Source Sans Pro", Helvetica, sans-serif !important;  }
 .reveal span.source {text-align:right !important; display:block;}
 .reveal .source.left { text-align:left !important; }
-
+.source.refs p { margin:.5em 0;  font-size:.8em; }
+ 
 h1 { font-size:2em !important; }
 h3 .pretitle { display:block; font-size:.3em; text-transform: uppercase; }
 
