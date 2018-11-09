@@ -1091,12 +1091,22 @@ This presentation is available at
 
 ### Resources
 
-- [Xenographics](http://xeno.graphics)  
-   Weird but (sometimes) useful charts.
-- [Open Access Vis](http://oavis.steveharoz.com/)  
-   A collection of open access visualisation research at the VIS 2018 conference.
+<div style="font-size:.7em !important;">
+
+- [D3.js](https://d3js.org/)    
+    A JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS.
+- [ggplot2](https://ggplot2.tidyverse.org/)  
+    Data visualization package for the statistical programming language R. 
 - [IEEEVIS 2018](http://ieeevis.org/year/2018/info/papers-sessions)  
     Conference on Scientific Visualisation, Information Visualisation and Visual Analytics. Papers from the 2018 edition.
+- [matplotlib](https://matplotlib.org/), [seaborn](https://seaborn.pydata.org/)  
+    Just two of the many data visualisation libraries available for Python
+- [Open Access Vis](http://oavis.steveharoz.com/)  
+   A collection of open access visualisation research at the VIS 2018 conference.
+- [Xenographics](http://xeno.graphics)  
+   Weird but (sometimes) useful charts.
+
+</div>
 
 ### References
 
