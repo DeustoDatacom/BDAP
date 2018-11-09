@@ -375,8 +375,15 @@ A word of caution:
 
 ### <span class="pretitle">1. Data visualisation as an artefact</span> Multiple Linked Views (MLV) <span class="trend"></span> <span class="innovation"></span> {data-transition="slide-in fade-out"}
 
-_Making Data Visual_
+>In a MLV system, a dataset is shown in multiple simple visualizations, with the data items shown in the different charts corresponding to each other. The charts in each visualization can be used to highlight, control, or filter the data items shown in the others. 
 
+<span class="source">(Meyer & Fihser 2018)</span>
+
+::: notes
+
+When idioms are not enough to communicate a complex message, combinations of idioms, more complex paragraphs, are required.
+
+:::
 
 
 ### {data-background-iframe="https://www.youtube.com/embed/kiXMn2VPZek" data-transition="fade-in slide-out"}

@@ -2,6 +2,8 @@
 .trend:before {background-color:#1d79c4;content:"trend";}
 .innovation:before {background-color:#fcdd2d;content:"innovation";} 
 
+.trend, .innovation { display: none; }
+
 .reveal .source { font-size:.4em !important;  font-family:"Roboto", "Montserrat", "Source Sans Pro", Helvetica, sans-serif !important;  }
 .reveal span.source {text-align:right !important; display:block;}
 .reveal .source.left { text-align:left !important; }
