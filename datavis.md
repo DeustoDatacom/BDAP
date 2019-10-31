@@ -2,8 +2,8 @@
 title: Data visualisation
 pagetitle: Data visualisation
 subtitle: from a communication perspective
-date: <span style="font-style:normal;">European Data Incubator</span><br />Bilbao, 6<small>th</small> November 2019
-author: Mikel Madina & Miren Berasategi
+date: <span style="display:block;margin-top:-1em;margin-bottom:1em;font-size:.8em;font-style:normal;">with Mikel Madina</span><span style="font-style:normal;">European Data Incubator</span><br />Bilbao, 6<small>th</small> November 2019
+author: Miren Berasategi
 theme: deusto
 deusto: TRUE
 ...
