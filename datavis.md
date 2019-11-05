@@ -606,6 +606,8 @@ Profile Meeks,  Data visualization Engineer at Apple, formerly Netflix.
 Even if this section shows the most communicative-social science view, he is actually an engineer.
 
 :::
+
+
 ### {data-transition="fade"}
 
 <h2>2.&nbsp;Data visualization as a communication product</h2>
@@ -648,9 +650,9 @@ Let's go slow down a bit
 
 **Explicitly**
 
-Charts _do_ "show me the data" (but remember that it's more that they **tell** the data than actually show it).
+Charts _do_ "show me the data" (actually, it's more that they **tell** the data than actually show it).
 
-Means chosing the right specific chart to use in order to display and query the data.
+Means choosing the right specific chart to use in order to display and query the data.
 
 . . .
 
@@ -736,15 +738,35 @@ The implicit channel of a data visualization (the title and other framing elemen
 
 <span class="source">(Meeks 2018)</span>
 
-. . .
-
-**How to improve:** Caution not to reveal an underlying system that is proprietary or confidential.
-
 ::: notes
 
 There's sort of a cruel irony to the way we simultaneously share these data products so enthusisastically while bemoaning the privacy issues that are necessary for their creation.
 
 :::
+
+### <span class="pretitle">2. Data visualization as a communication product</span> What charts say {data-transition="fade"}
+
+**Systematically** 
+
+![Facebook Fandom Map 2014](img/facebook-nfl.jpg){width=700}
+
+::: notes
+
+Do you ever remember telling Facebook what football team you root for?
+
+:::
+
+### <span class="pretitle">2. Data visualization as a communication product</span> What charts say {data-transition="fade"}
+
+**Systematically** 
+
+<br />
+
+>[...] all charts display data and all data is a proxy for the systems that created and measured that data.
+
+<span class="source">(Meeks 2018)</span>
+**How to improve:** Caution not to reveal an underlying system that is proprietary or confidential.
+
 
 ### <span class="pretitle">2. Data visualization as a communication product</span> What charts say {data-transition="fade"}
 
@@ -772,6 +794,7 @@ Unlike the implicit channel, the descriptive channel is active and purposeful (n
 <div class="center" style="padding-top:.5em;">
 What does your chart say that you didn't intend?
 </div>
+
 ### <span class="pretitle">2. Data visualization as a communication product</span> What charts mean {data-transition="slide-in fade-out"}
 
 **Intentionally**
@@ -804,21 +827,30 @@ It is important to provide background about the data sources, to enable checking
 
 ![A Minnesota Department of Health chart on changing obesity rates that relies on BMI will still be around long after we develop a more sophisticated measure of health and yet nowhere on this chart does “BMI” appear (Meeks 2018)](img/obesity.png)
 
-### <span class="pretitle">2. Data visualization as a communication product</span> What charts mean {data-transition="fade"}
+<!-- ### <span class="pretitle">2. Data visualization as a communication product</span> What charts mean {data-transition="fade"}
 
 **Culturally**
 
 <br />
 
-Charts should be adapted to the culture they will be consumed in (think user-centered design techniques).
+Charts should be adapted to the culture they will be consumed in (think user-centered design techniques). -->
 
 ### <span class="pretitle">2. Data visualization as a communication product</span> What charts mean {data-transition="fade"}
 
 **Contextually**
 
-<br />
+A chart might end up serving as context: design and provide a version of the chart that is suitable for inclusion alongside other charts.
+
 
 Enable removing and adjusting data visualization elements to reduce complexity, not based on screen size as in responsive data visualization, but on priority.
+
+::: notes
+
+A chart that’s being integrated into another display or presentation can find itself in front of an audience that does not have the same domain knowledge as the primary audience, so this is yet another reason to have its data sources, dimensions and metrics more explicitly described.
+
+:::
+
+
 
 ### <span class="pretitle">2. Data visualization as a communication product</span> What charts mean {data-transition="fade-in slide-out"}
 
@@ -834,6 +866,12 @@ Enable removing and adjusting data visualization elements to reduce complexity, 
 <br />
 
 The most important thing about a chart is its impact. 
+
+::: notes
+
+Impact is the effect that should be caused by the chart.
+
+:::
 
 ### <span class="pretitle">2. Data visualization as a communication product</span> What charts do {data-transition="fade"}
 
@@ -1228,7 +1266,7 @@ There is no such thing as raw data, and there is neither such a thing as a raw d
 <div class="center">
 
 This presentation is available at  
-[`https://mrn.bz/BDAP2018`](https://mrn.bz/BDAP2018)
+[`https://mrn.bz/EDI2019`](https://mrn.bz/EDI2019)
 
 </div>
 
@@ -1238,7 +1276,7 @@ This presentation is available at
 
 ![](img/deustokomunika-logo.png){width="50" style="vertical-align:middle;"}
 [&#64; DeustoKomunika](http://twitter.com/deustokomunika)  ![](img/deustodatacom-logo.png){width="50" style="vertical-align:middle;padding-left:25px;"}
-[&#64; DeustoData](http://twitter.com/deustodata) [&#64; mberasategi](http://twitter.com/mberasategi){style="padding-left:25px;"} [&#64; neregauzak](https://twitter.com/neregauzak){style="padding-left:25px;"}
+[&#64; DeustoData](http://twitter.com/deustodata) [&#64; miren@mastodon.eus ](http://mastodon.eus/@miren){style="padding-left:25px;"} <!-- [&#64; neregauzak](https://twitter.com/neregauzak){style="padding-left:25px;"} -->
 
 </div>
 
@@ -1252,7 +1290,7 @@ This presentation is available at
 - [ggplot2](https://ggplot2.tidyverse.org/)  
     Data visualization package for the statistical programming language R. 
 - [IEEEVIS 2019](http://ieeevis.org/year/2019/info/papers-sessions)  
-    Conference on Scientific visualization, Information visualization and Visual Analytics. Papers from the 2018 edition.
+    Conference on Scientific visualization, Information visualization and Visual Analytics. Papers from the 2019 edition.
 - [matplotlib](https://matplotlib.org/), [seaborn](https://seaborn.pydata.org/)  
     Just two of the many data visualization libraries available for Python
 - [Open Access Vis](http://oavis.steveharoz.com/)  
@@ -1332,5 +1370,5 @@ Ronell Sicat, Jiabao Li. [_DXR: A Toolkit for Building Immersive Data Visualizat
 
 </div>
 
-<p style="font-family:Roboto, Montserrat, Helvetica, Arial, sans-serif; font-size:.3em;font-weight:200;margin-top:3em;">Copyright &copy; 2018 University of Deusto<br />
+<p style="font-family:Roboto, Montserrat, Helvetica, Arial, sans-serif; font-size:.3em;font-weight:200;margin-top:3em;">Copyright &copy; 2019 University of Deusto<br />
 This work (except for the quoted images, whose rights are reserved to their owners) is licensed under the Creative Commons “Attribution-ShareAlike” License. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/3.0/](http://creativecommons.org/licenses/by-sa/3.0/)</p>
