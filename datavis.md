@@ -221,13 +221,19 @@ Dense clusters of lines are easy to spot in blue, while bright yellow shows area
 Adding the time factor:
 
 - Static visualisations with real data (at the time of loading)
-- Real-time visualisations, static and auto-refreshed
+- Real-time/evolving visualisations, static and auto-refreshed 
 - Streaming data visualisations showing the flow of data
 
 Require an additional effort for operational intelligence, where immediate decision making could be a requirement.
 
 <span class="source">Source: Aragues 2018</span>
 
+<!-- Gapminder: https://youtu.be/hVimVzgtD6w?t=147
+
+https://medium.com/@urban_institute/4-observations-on-animating-your-data-visualizations-cf987b069c35
+
+Periphery plots: https://vimeo.com/363453522
+ -->
 ::: notes
 
 A static visualisation that uses the data that is available when the visualisation is created. Any new data requires a refresh.
@@ -242,7 +248,7 @@ A streaming data visualisation that shows the flow of data and the impact it has
 
 How to communicate _nothingness_? (Kirk 2014)
 
-###  {data-transition="fade" data-background-iframe="https://www.youtube.com/embed/JqzAuqNPYVM?start=524"}
+###  {data-transition="fade" data-background-iframe="https://www.youtube.com/embed/JqzAuqNPYVM?start=519"}
 
 ::: notes
 
@@ -1097,7 +1103,7 @@ This presentation is available at
     A JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS.
 - [ggplot2](https://ggplot2.tidyverse.org/)  
     Data visualization package for the statistical programming language R. 
-- [IEEEVIS 2018](http://ieeevis.org/year/2018/info/papers-sessions)  
+- [IEEEVIS 2019](http://ieeevis.org/year/2019/info/papers-sessions)  
     Conference on Scientific Visualisation, Information Visualisation and Visual Analytics. Papers from the 2018 edition.
 - [matplotlib](https://matplotlib.org/), [seaborn](https://seaborn.pydata.org/)  
     Just two of the many data visualisation libraries available for Python
@@ -1105,6 +1111,8 @@ This presentation is available at
    A collection of open access visualisation research at the VIS 2018 conference.
 - [Xenographics](http://xeno.graphics)  
    Weird but (sometimes) useful charts.
+- [Data Visualisation Catalogue](https://datavizcatalogue.com/index.html)
+   A library of different information visualisation types.
 
 </div>
 
