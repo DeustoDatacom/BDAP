@@ -79,22 +79,28 @@ The artefact goes social
 </ol>
 </div>
 </section>
-<section><section id="data-visualization-as-an-artefact" class="title-slide slide level1" data-transition="slide-in fade-out"><h1>1. Data visualization <br />as an artefact</h1></section><section id="section-1" class="slide level3" data-transition="fade-in slide-out">
+<section><section id="data-visualization-as-an-artefact" class="title-slide slide level1" data-transition="slide-in fade-out"><h1>1. Data visualization <br />as an artefact</h1></section><section class="slide level3">
+
+<div class="center sans" style="margin-top:5em;">
+<p><strong>Something</strong> to tell the data to others.</p>
+</div>
+</section><section id="section-1" class="slide level3" data-transition="fade-in slide-out">
 <h3></h3>
 <blockquote style="font-size:.7em;font-style:normal;margin-top:3em;">
 <span style="font-size:1.5em;">artefact </span> <small style="vertical-align:middle !important">(<em>US</em> <strong>artifact</strong>)</small> <small style="vertical-align:middle !important;font-weight:bold;color:green">noun</small>
 </blockquote>
 <blockquote style="font-size:.7em;font-style:normal;">
-<p><small>1</small> An object made by a human being, typically one of cultural or historical interest.</p>
+<p><small>1</small> An object <span class="fragment highlighted" data-fragment-index="1">made</span> by a human being, typically <span class="fragment highlighted" data-fragment-index="1">one of cultural or historical interest</span>.</p>
 <em>‘gold and silver artefacts’</em>
 </blockquote>
 <blockquote style="font-size:.7em;font-style:normal;">
-<p><small>2</small> Something observed in a scientific investigation or experiment that is not naturally present but occurs as a result of the preparative or investigative procedure.</p>
+<p><small>2</small> Something observed in a scientific investigation or experiment that is <span class="fragment highlighted" data-fragment-index="1">not naturally present</span> but occurs as a <span class="fragment highlighted" data-fragment-index="1">result of the preparative or investigative procedure</span>.</p>
 <em>‘the curvature of the surface is an artefact of the wide-angle view’</em>
 </blockquote>
 <p><span class="source">The Oxford Dictionary of English</span></p>
 <aside class="notes">
 <p>Dataviz are manufactured products, are not “found in nature” -&gt; they carry interpretations by the creator, so it’s important to be aware of this</p>
+<p>Now let’s dissect the artefact…</p>
 </aside>
 </section><section id="data-visualization-as-an-artefact-the-atomic-level" class="slide level3" data-transition="slide-in fade-out">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
@@ -120,9 +126,10 @@ observations
 </table>
 <aside class="notes">
 <p><strong>Observations</strong> need to be transformed into visual <strong>marks</strong>.</p>
-<p>Data Density An overall characteristic of the visual elements, used in combination, is data density. Data density refers to the number of useful data points you can get into an area.</p>
-<p>In a picture of 1000 x 1000 pixels, the maximum of observations to fit is 10<sup><small>6</small></sup> (1 million). How big is that?</p>
+<p>Data Density: An overall characteristic of the visual elements, used in combination, is data density. Data density refers to the number of useful data points you can get into an area.</p>
+<p>We can only represent as many marks (as representations of observations) as we have pixels: in a picture of 1000 x 1000 pixels, the maximum of observations to fit is 1 million. How big is that?</p>
 <p>More than 1 pixel is used to represent each data point, + complimentary pixels for titles, labels, white space.</p>
+<p>Reduction is required.</p>
 </aside>
 </section><section id="data-visualization-as-an-artefact-the-atomic-level-1" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
@@ -131,30 +138,36 @@ observations
 <ol type="1">
 <li class="fragment">Filter observations</li>
 <li class="fragment">Split data into multiple charts</li>
-<li class="fragment">Augmenting visualizations</li>
+<li class="fragment">Augmented visualizations</li>
 <li class="fragment">Densify</li>
-<li class="fragment">Adding the time factor</li>
 </ol>
+<aside class="notes">
+<p>Not only that so much data can be displayed, but that it cannot actually be correctly interpreted.</p>
+<p>1, 2, 3 and 5, escape densification; 4 represents density.</p>
+</aside>
 </section><section id="data-visualization-as-an-artefact-the-atomic-level-2" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
 <p><strong>1. Filter observations</strong> <span class="trend"></span></p>
 <ul>
 <li class="fragment">By design, communicating a selection of data</li>
-<li class="fragment">By allowing the user to filter according to their interests
+<li class="fragment">By allowing users to filter according to their interests
 <ul>
-<li class="fragment">Innovative filtering <span class="innovation"></span> (i.e. <a href="https://youtu.be/ogfR4emjgP4?t=111">Smart brushing</a>) <!-- (https://youtu.be/VU117h6wT6w?t=576) --></li>
+<li class="fragment">Innovative filtering <span class="innovation"></span> (i.e. <a href="https://youtu.be/VU117h6wT6w?t=580">Smart brushing</a>) <!-- (https://youtu.be/ogfR4emjgP4?t=111) --></li>
 </ul></li>
 </ul>
 <aside class="notes">
-<p>by design, using criteria present in the data.</p>
-<p>by the user, requires interaction / UX design</p>
+<p>To make a selection of the data to display.</p>
+<ul>
+<li>by design, using criteria present in the data.</li>
+<li>by users, requires interaction / UX design.</li>
+</ul>
 <p>innovation in the part of how the user interacts with the data: smart brushing</p>
 </aside>
-</section><section id="section-2" class="slide level3" data-transition="fade" data-background-iframe="https://www.youtube.com/embed/ogfR4emjgP4?controls=0&amp;start=111">
+</section><section id="section-2" class="slide level3" data-transition="fade" data-background-iframe="https://www.youtube.com/embed/VU117h6wT6w?controls=0&amp;start=580">
 <h3></h3>
 <aside class="notes">
 <p>Instead of selecting by line, allows the user to select by pattern. Useful for data exploration</p>
-<p>run up to <!-- `now they're translating the brush from left to right` --><code>individual nodes of the brush can also be moved</code></p>
+<p>run up to <code>now they're translating the brush from left to right</code> <!-- `individual nodes of the brush can also be moved` --></p>
 <p>Interpretation is up to the specific dataset and the objectives of the viz, but the point is that while it may allow for more complex insight, it also requires complex interaction capacity on the part of the user</p>
 </aside>
 </section><section id="data-visualization-as-an-artefact-the-atomic-level-3" class="slide level3" data-transition="fade">
@@ -166,15 +179,16 @@ observations
 <img data-src="img/smallmultiples2.jpg" alt="Example of small multiples: The Trilogy Meter (Meth 2009)" height="300" /><figcaption>Example of small multiples: The Trilogy Meter (Meth 2009)</figcaption>
 </figure>
 <aside class="notes">
-<p>Small multiples are sets of charts of the same type, with the same scale, presented together at a small size and with minimal detail, usually in a grid of some kind. The term was at least popularized by Edward Tufte, appearing first in his Visual Display of Quantitative Information in 1983. He says of them:</p>
+<p>Small multiples are sets of charts of the same type, with the same scale, presented together at a small size and with minimal detail, usually in a grid of some kind (in this case grid irrelevant). The term was at least popularized by Edward Tufte, appearing first in his seminal book <em>Visual Display of Quantitative Information</em> in 1983. He says of them:</p>
 <blockquote>
-<p>Small multiples are economical: once viewers understand the design of one [chart], they have immediate access to the data in all the other [charts]… as the eye moves from one [chart to the next, the consistency of the design allows viewers to focus on changes in the data rather than on changes in graphical design.</p>
+<p>Small multiples are economical: once viewers understand the design of one [chart], they have immediate access to the data in all the other [charts]… as the eye moves from one [chart] to the next, the consistency of the design allows viewers to focus on changes in the data rather than on changes in graphical design.</p>
 </blockquote>
+<p>These will show up again later.</p>
 </aside>
 </div>
 </section><section id="data-visualization-as-an-artefact-the-atomic-level-4" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
-<p><strong>3. Augmenting visualizations</strong> <span class="trend"></span></p>
+<p><strong>3. Augmented visualizations</strong> <span class="trend"></span></p>
 <div class="fragment">
 <figure>
 <img data-src="img/ggplot-extra.png" alt="ggExtra, adding marginal histograms to ggplot2 (by Dean Attali)" height="350" /><figcaption><a href="https://daattali.com/shiny/ggExtra-ggMarginal-demo/">ggExtra</a>, adding marginal histograms to ggplot2 (by Dean Attali)</figcaption>
@@ -193,6 +207,9 @@ observations
 <figure>
 <img data-src="img/scatterplot1.png" alt="Clearly overplotted scatterplot (Kovalyshyn 2017)" height="325" /><figcaption>Clearly overplotted scatterplot (Kovalyshyn 2017)</figcaption>
 </figure>
+<aside class="notes">
+<p>Crowded scatterplots are a classic example. What do you think we could do?</p>
+</aside>
 </div>
 </section><section id="data-visualization-as-an-artefact-the-atomic-level-6" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
@@ -203,6 +220,9 @@ observations
 <figure>
 <img data-src="img/scatterplot2.png" alt="Using transparency is not helpful (Kovalyshyn 2017)" height="325" /><figcaption>Using transparency is not helpful (Kovalyshyn 2017)</figcaption>
 </figure>
+<aside class="notes">
+<p>We can restort to a graphic resource like the alpha channel: still not useful</p>
+</aside>
 </section><section id="data-visualization-as-an-artefact-the-atomic-level-7" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
 <p><strong>4. Densify</strong></p>
@@ -210,11 +230,11 @@ observations
 <li>Escaping overplotting in scatterplots <span class="trend"></span></li>
 </ul>
 <figure>
-<img data-src="img/scatterplot-hexbin.png" alt="Now we can see density (Kovalyshyn 2017)" height="325" /><figcaption>Now we can <strong>see</strong> density (Kovalyshyn 2017)</figcaption>
+<img data-src="img/scatterplot-hexbin.png" alt="Now we can see density (Kovalyshyn 2017), using the stat_binhex function from the ggplot2 package" height="325" /><figcaption>Now we can <strong>see</strong> density (Kovalyshyn 2017), using the <code>stat_binhex</code> function from the <code>ggplot2</code> package</figcaption>
 </figure>
 <aside class="notes">
-<p>Actually implies statistical simplification.</p>
-<p>color is in logaritmic scale, so density is more apparent</p>
+<p>Actually requires/involves statistical simplification.</p>
+<p>Color is in logaritmic scale, so density is more apparent.</p>
 </aside>
 </section><section id="data-visualization-as-an-artefact-the-atomic-level-8" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
@@ -243,7 +263,9 @@ observations
 </aside>
 </section><section id="data-visualization-as-an-artefact-the-atomic-level-10" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
-<p><strong>4. Densify</strong> (off-topic)</p>
+<div class="center smaller sans">
+<p>(off-topic: reference-dependent preferences)</p>
+</div>
 <figure>
 <img data-src="img/marathon-finish.png" alt="Marathon finishing times (Allen et al. 2017)" height="400" /><figcaption>Marathon finishing times (Allen et al. 2017)</figcaption>
 </figure>
@@ -255,24 +277,37 @@ observations
 </aside>
 </section><section id="data-visualization-as-an-artefact-the-atomic-level-11" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
-<p><strong>5. Adding the time factor</strong></p>
+<p>A couple more things at this level of the number of observations:</p>
+<ul>
+<li>the time factor</li>
+<li><em>nothingness</em></li>
+<li>uncertainty, projections and other non-factual data</li>
+</ul>
+</section><section id="data-visualization-as-an-artefact-the-atomic-level-12" class="slide level3" data-transition="fade">
+<h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
+<p><strong>The time factor</strong></p>
 <div class="small">
 <ul>
 <li>Static visualizations with real data (at the time of loading)</li>
 <li>Real-time visualizations, static and auto-refreshed</li>
 <li>Streaming data visualizations showing the flow of data</li>
 </ul>
-<p>Require an additional effort for operational intelligence, where immediate decision making could be a requirement.</p>
+<p><span class="fragment">Require an additional effort for operational intelligence, where immediate decision making could be a requirement.</span></p>
 </div>
 <p><span class="source">Source: Aragues 2018</span></p>
 <div class="fragment center">
 <p>There is more time than real-time.</p>
 </div>
 <aside class="notes">
-<p>A static visualization that uses the data that is available when the visualization is created. Any new data requires a refresh.</p>
-<p>From Administrador de tareas/Windows Task Manager:</p>
-<p>A real-time visualization that looks like the static one but updates itself constantly.</p>
-<p>A streaming data visualization that shows the flow of data and the impact it has on the statistics.</p>
+<ul>
+<li>A static visualization that uses the data that is available when the visualization is created. Any new data requires a refresh.</li>
+<li>From Windows Task Manager: <code>Ctrl+Shift+Esc</code>
+<ul>
+<li>A real-time visualization that looks like the static one but updates itself constantly.</li>
+<li>A streaming data visualization that shows the flow of data and the impact it has on the statistics.</li>
+</ul></li>
+</ul>
+<p>Perception of moving elements poses an additional difficulty for interpretation.</p>
 <!-- Gapminder: https://youtu.be/hVimVzgtD6w?t=147
 
 https://medium.com/@urban_institute/4-observations-on-animating-your-data-visualizations-cf987b069c35
@@ -283,11 +318,12 @@ Periphery plots: https://vimeo.com/363453522
 </section><section id="section-3" class="slide level3" data-transition="fade" data-background-iframe="https://www.youtube.com/embed/hVimVzgtD6w?controls=0&amp;start=149">
 <h3></h3>
 <aside class="notes">
+<p>Global Development-Health to Swedish undegraduate students, top-grade instution. Did a pre-test: asked about child mortality on 5 pairs of countries (with double difference), mean 1.8/5 CI 0.4 = his course made sense. Chimpanzees 2.5. Repeated on professors, 2.4/0.4</p>
 <p>Hans Rosling shifted the widespread view of a world divided into us/west and them/developing countries</p>
 </aside>
-</section><section id="data-visualization-as-an-artefact-the-atomic-level-12" class="slide level3" data-transition="fade">
+</section><section id="data-visualization-as-an-artefact-the-atomic-level-13" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
-<p><strong>5. Adding the time factor</strong></p>
+<p><strong>The time factor</strong></p>
 <p>A note of caution on using animations:</p>
 <ul>
 <li class="fragment">They rely on memory (from one frame to the next), so change should be obvious</li>
@@ -303,9 +339,9 @@ Periphery plots: https://vimeo.com/363453522
 <aside class="notes">
 <p>Subjects who knew about videos like this one consistently spotted the gorilla in the new video, but they were slightly less likely to notice the other events. Foreknowledge that unexpected events might occur does not enhance the ability to detect other such events.</p>
 </aside>
-</section><section id="data-visualization-as-an-artefact-the-atomic-level-13" class="slide level3" data-transition="fade">
+</section><section id="data-visualization-as-an-artefact-the-atomic-level-14" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
-<p>How to communicate <em>nothingness</em>? (Kirk 2014)</p>
+<p><strong>How to communicate <em>nothingness</em>?</strong> (Kirk 2014)</p>
 <ul>
 <li class="fragment"><strong>Null</strong>   Absence of measurement</li>
 <li class="fragment"><strong>Zero</strong>   Absence of amount/magnitude</li>
@@ -315,7 +351,7 @@ Periphery plots: https://vimeo.com/363453522
 <!-- run up to "what can we learn fron the gaps" -->
 <p><code>null</code> in the age of information overload, data absence is more and more significant. may help in the detection of faulty sensors. If models are built filtering nulls, this insight may be lost. -&gt; flat electroencephalogram, absence of brainwaves is important to notice</p>
 </aside>
-</section><section id="section-6" class="slide level3" data-transition="fade" data-background-iframe="https://www.youtube.com/embed/JqzAuqNPYVM?start=542">
+</section><section id="section-6" class="slide level3" data-transition="fade" data-background-iframe="https://www.youtube.com/embed/JqzAuqNPYVM?start=542&amp;controls=0&amp;stop=607">
 <h3></h3>
 <aside class="notes">
 <p>run up to John Snow</p>
@@ -323,11 +359,11 @@ Periphery plots: https://vimeo.com/363453522
 </section><section id="section-7" class="slide level3" data-transition="fade" data-background-iframe="https://www.youtube.com/embed/JqzAuqNPYVM?start=669">
 <h3></h3>
 <aside class="notes">
-<p>run up to Egypt Internet traffic</p>
+<p>run up to <code>the only option we've got in many respects</code></p>
 </aside>
-</section><section id="data-visualization-as-an-artefact-the-atomic-level-14" class="slide level3" data-transition="fade">
+</section><section id="data-visualization-as-an-artefact-the-atomic-level-15" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
-<p>How to communicate <em>nothingness</em>?</p>
+<p><strong>How to communicate <em>nothingness</em>?</strong></p>
 <ul>
 <li><strong>Null</strong>   Absence of measurement</li>
 <li><strong>Zero</strong>   Absence of amount/magnitude<br />
@@ -345,16 +381,17 @@ Periphery plots: https://vimeo.com/363453522
 <li>area only? we can’t see</li>
 </ul>
 <p>the last two require an alternative (like annotation)</p>
-<p><code>blank</code> gives us space to breath. requires courage, implies losing the potential to densify, add advertising</p>
+<p><code>blank</code> gives us space to breath. Requires courage, implies losing the potential to densify, add advertising.</p>
+<p>There is one thing we don’t want to make visible: the design. Should not interfere.</p>
 </aside>
 </section><section id="section-8" class="slide level3" data-transition="fade" data-background-iframe="https://www.youtube.com/embed/JqzAuqNPYVM?start=1153">
 <h3></h3>
 <aside class="notes">
 <p>glass ceiling only</p>
 </aside>
-</section><section id="data-visualization-as-an-artefact-the-atomic-level-15" class="slide level3" data-transition="fade">
+</section><section id="data-visualization-as-an-artefact-the-atomic-level-16" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
-<p>How to communicate <em>nothingness</em>?</p>
+<p><strong>How to communicate <em>nothingness</em>?</strong></p>
 <ul>
 <li><strong>Null</strong>   Absence of measurement</li>
 <li><strong>Zero</strong>   Absence of amount/magnitude</li>
@@ -366,19 +403,20 @@ Periphery plots: https://vimeo.com/363453522
 </section><section id="section-9" class="slide level3" data-transition="fade" data-background-iframe="https://www.youtube.com/embed/JqzAuqNPYVM?start=1363">
 <h3></h3>
 <aside class="notes">
-<p>invisible design, should not interfere with reading the graph.</p>
-<p>Run up to Antoine Saint-Exupery</p>
+<p>Invisible design, should not interfere with reading the graph. There is quite a lot of blank space, but very little non-data-ink.</p>
+<p>Run up to Antoine de Saint-Exupery</p>
 </aside>
-</section><section id="data-visualization-as-an-artefact-the-atomic-level-16" class="slide level3" data-transition="fade-in slide-out">
+</section><section id="data-visualization-as-an-artefact-the-atomic-level-17" class="slide level3" data-transition="fade-in slide-out">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> The atomic level</h3>
-<p>Communicating uncertainty, projections,<br />
+<p>Communicating <strong>uncertainty, projections,</strong><br />
 and other non-factual data is challenging.</p>
 <div class="fragment">
 <figure>
 <img data-src="img/hop.gif" alt="Uncertainty visualizations tested in experiments (Kale et al. 2019)" height="300" /><figcaption>Uncertainty visualizations tested in experiments (Kale <em>et al.</em> 2019)</figcaption>
 </figure>
 <aside class="notes">
-<p>margins of error must also be communicated, and they are often mistakenly interpreted as the probability for an event to happen.</p>
+<p>Better ways to do this are still being investigated.</p>
+<p>Margins of error must also be communicated, and they are often mistakenly interpreted as the probability for an event to happen.</p>
 <p>This was about how to reduce the number of observations to represent in a graph. Now, about the number of variables, there is some translation to be made.</p>
 </aside>
 </div>
@@ -391,6 +429,9 @@ and other non-factual data is challenging.</p>
 <figure>
 <img data-src="img/munzner-5.2.png" alt="Marks are geometric primitives (Munzner 2014, p.96)" width="400" /><figcaption>Marks are geometric primitives (Munzner 2014, p.96)</figcaption>
 </figure>
+<aside class="notes">
+<p>Marks represent observations/groups of observations. We have a limited space to include those.</p>
+</aside>
 </section><section id="data-visualization-as-an-artefact-number-of-variables-1" class="slide level3">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> Number of variables <span class="trend"></span></h3>
 <p>A visual <strong>channel</strong> is a way to control the appearance of marks.</p>
@@ -398,16 +439,17 @@ and other non-factual data is challenging.</p>
 <img data-src="img/munzner-5.3.png" alt="Visual channels control the appearance of marks (Munzner 2014, p.96)" width="400" /><figcaption>Visual channels control the appearance of marks (Munzner 2014, p.96)</figcaption>
 </figure>
 <aside class="notes">
-<p>There are only so many channels we can use in a visual representation.</p>
+<p>Channels represent information about the marks (variables), qualitites.</p>
+<p>Don’t take up space, BUT there are only so many channels we can use in a visual representation.</p>
 <p>One and only one attribute/variable should be used per channel. Multiple channels per attribute are possible (redundant encoding).</p>
-<p>All channels are not equal: the selection of marks and channels should be guided by the principles of expressivenes and effectiveness.</p>
+<p>All channels are not equal: the selection of marks and channels should be guided by the principles of expressivenes and effectiveness. i.e. if communicating magnitude, no sense in using size to represent anything else.</p>
 </aside>
 </section><section id="data-visualization-as-an-artefact-number-of-variables-2" class="slide level3">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> Number of variables <span class="trend"></span></h3>
 <p><br /></p>
 <p>It is required to reduce dimensionality (statistically): PCA, factors, clustering.</p>
 <aside class="notes">
-<p>gaphic variables than can be used are limited, a reduction is required.</p>
+<p>Graphic variables than can be used are limited, a reduction is required.</p>
 <p>Once the most important attributes/variables for the desired insight have been identified, the selection of marks and channels should ensure that they are encoded with the highest ranked.</p>
 </aside>
 </section><section id="data-visualization-as-an-artefact-number-of-variables-3" class="slide level3">
@@ -417,6 +459,7 @@ and other non-factual data is challenging.</p>
 </figure>
 <aside class="notes">
 <p>The choice of which attributes/variables to encode with position is the most central choice in visual encoding.</p>
+<p>The combination of these elements of visual language has generated commonly used ways, or idioms, to represent certain types of data (i.e. line graphs for time-dependent unique variables).</p>
 <p>However, sometimes the “classical” or pre-set ways or conventions to represent information will not be the most effective (e.g. line graphs for time progression). In that case,</p>
 </aside>
 </section><section id="data-visualization-as-an-artefact-generating-new-idioms" class="slide level3" data-transition="slide-in fade-out">
@@ -431,6 +474,7 @@ and other non-factual data is challenging.</p>
 <div class="fragment">
 <p><a href="https://www.xeno.graphics/">Xenographics</a>: Weird <span class="fragment">but (sometimes) useful </span>charts</p>
 <aside class="notes">
+<p>Many examples of this in Xenographics.</p>
 <p>We have seen some Xenographics charts already: denselines</p>
 </aside>
 </div>
@@ -453,11 +497,11 @@ and other non-factual data is challenging.</p>
 </section><section id="data-visualization-as-an-artefact-generating-new-idioms-2" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> Generating new idioms <span class="innovation"></span></h3>
 <figure>
-<img data-src="img/scatterplot-linecharts.png" alt="Scatterplot of line charts" height="325" /><figcaption>Scatterplot of line charts</figcaption>
+<img data-src="img/scatterplot-linecharts.png" alt="Scatterplot of line charts (Ashkenas &amp; Parlapiano 2014)" height="425" /><figcaption>Scatterplot of line charts (Ashkenas &amp; Parlapiano 2014)</figcaption>
 </figure>
 <aside class="notes">
-<p>Small multiple line charts on a scatter plot. Each line shows change in job count for an industry. Horizontally, they’re organized by average salary, and vertically, they’re organized by relative change since the end of the recession. Green represents growth and red represents decline.</p>
-<p>Another approach could be using small multiples: adding multiple simple charts, instead of making a complex one</p>
+<p>Small multiple line charts on a scatter plot. Each line shows change in job count for an industry. Horizontally, they’re organized by average salary, and vertically, they’re organized by relative change since the end of the recession. Green represents growth and red represents decline. Hovering allows more detailed exploration of each line.</p>
+<p>Another approach could be using small multiples: adding multiple simple charts, instead of making a complex one. Another way to use multiple charts are</p>
 </aside>
 </section><section id="data-visualization-as-an-artefact-multiple-linked-views-mlv" class="slide level3" data-transition="slide-in fade-out">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> Multiple Linked Views (MLV) <span class="trend"></span> <span class="innovation"></span></h3>
@@ -466,14 +510,15 @@ and other non-factual data is challenging.</p>
 </blockquote>
 <p><span class="source">(Meyer &amp; Fihser 2018)</span></p>
 <aside class="notes">
-<p>When idioms are not enough to communicate a complex message, combinations of idioms, more complex paragraphs, are required.</p>
+<p>To make an analogy with language, when idioms are not enough to communicate a complex message, combinations of idioms, that is, more complex paragraphs, are required.</p>
 </aside>
 </section><section id="section-10" class="slide level3" data-background-iframe="https://www.youtube.com/embed/kiXMn2VPZek" data-transition="fade-in slide-out">
 <h3></h3>
 <p><span class="source" style="margin-top:600px;">(Lagner, Kister &amp; Dachselt 2019)</span></p>
 <aside class="notes">
-<p>multiple views, with an innovative UI. Different levels of viewing: overview vs detail.</p>
+<p>Multiple views, with an innovative UI. Different levels of viewing: overview vs detail.</p>
 <p>AND linked views; a selection in one part drives change in another</p>
+<p>= complex interaction on the part of users.</p>
 </aside>
 </section><section id="data-visualization-as-an-artefact-beyond-2-dimensions" class="slide level3" data-transition="slide-in fade-out">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> Beyond 2 dimensions <span class="innovation"></span></h3>
@@ -485,10 +530,11 @@ and other non-factual data is challenging.</p>
 <aside class="notes">
 <p>Realidad virtual: Still purely graphic, tú te metes en el gráfico.</p>
 </aside>
-</section><section id="section-12" class="slide level3" data-background-iframe="https://www.youtube.com/embed/p4fB_OfoaZA" data-transition="fade">
+</section><section id="section-12" class="slide level3" data-background-iframe="https://www.youtube.com/embed/p4fB_OfoaZA?start=167" data-transition="fade">
 <h3></h3>
 <aside class="notes">
 <p>Realidad aumentada: El gráfico se saca a la realidad y se coordina con elementos de la realidad física.</p>
+<p>Run up to <code>eyes</code></p>
 </aside>
 </section><section id="data-visualization-as-an-artefact-other-senses" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">1. Data visualization as an artefact</span> Other senses <span class="innovation"></span></h3>
@@ -496,7 +542,7 @@ and other non-factual data is challenging.</p>
 <img data-src="img/sound.jpg" alt="Sonification example and demo (Guillemot 2018)" height="400" /><figcaption>Sonification example and <a href="https://inclusive.interactivethings.io/#/histogram/sonification">demo</a> (Guillemot 2018)</figcaption>
 </figure>
 <aside class="notes">
-<p>Not exactly visualization</p>
+<p>Not exactly visualization.</p>
 <p>Sound: improves accesibility. Keyboard navigation enables sound cues for each representation, and the whole chart can be <em>sonified</em>.</p>
 <p>Already mentioned with electroencephalograms.</p>
 </aside>
@@ -506,7 +552,12 @@ and other non-factual data is challenging.</p>
 <img data-src="img/smell-necklace.png" alt="Smell necklace designed to be used with an immersive VR display (via Twitter)" height="400" /><figcaption><em>Smell necklace</em> designed to be used with an immersive VR display (<a href="https://twitter.com/NElmqvist/status/1055370456528773120">via Twitter</a>)</figcaption>
 </figure>
 </section></section>
-<section><section id="data-visualization-as-a-communication-product" class="title-slide slide level1" data-transition="slide-in fade-out"><h1>2. Data visualization as <br />a communication product</h1></section><section id="section-13" class="slide level3" data-transition="fade">
+<section><section id="data-visualization-as-a-communication-product" class="title-slide slide level1" data-transition="slide-in fade-out"><h1>2. Data visualization as <br />a communication product</h1></section><section class="slide level3">
+
+<div class="center sans" style="margin-top:5em;">
+<p>Something to <strong>tell</strong> the data to others.</p>
+</div>
+</section><section id="section-13" class="slide level3" data-transition="fade">
 <h3></h3>
 <h2 style="margin-bottom:2em;">
 2. Data visualization as a communication product
@@ -516,8 +567,9 @@ and other non-factual data is challenging.</p>
 </blockquote>
 <p><span class="source">(Meeks 2018)</span></p>
 <aside class="notes">
-<p>Profile Meeks, Data visualization Engineer at Apple, formerly Netflix.</p>
-<p>Even if this section shows the most communicative-social science view, he is actually an engineer.</p>
+<p>These artefacts, or products, we are making to be told to others, or communicated. We will now see the implications of this social action applied to data visualization through a series of articles published by Elijah Meeks: Data visualization Engineer at Apple, formerly Netflix.</p>
+<p>Even if this section shows the most communicative-social science view, he is actually an engineer and wrote a book about D3js. He is advocating this communicative view into the more “this is an engineering problem” take.</p>
+<p>He sees a great problem in current data visualization.</p>
 </aside>
 </section><section id="section-14" class="slide level3" data-transition="fade">
 <h3></h3>
@@ -536,6 +588,7 @@ and other non-factual data is challenging.</p>
 <p>This breackneck pace is a real data visualization constraint.</p>
 </blockquote>
 <p>The fast mode of dataviz is real and important, but when we let it become our only view into what dataviz is, we limit ourselves in planning for how to build, support and design dataviz.</p>
+<p>Which doesn’t mean being fast will not be important sometimes, BUT it can not be at the expense of the fact that [NEXT]</p>
 </aside>
 </section><section id="section-15" class="slide level3" data-transition="fade-in slide-out">
 <h3></h3>
@@ -549,7 +602,7 @@ and other non-factual data is challenging.</p>
 <div class="fragment">
 <p>Let’s look at what charts <span class="fragment"><strong>say</strong></span><span class="fragment">, <strong>mean</strong></span><span class="fragment">, and <strong>do</strong>.</span></p>
 <aside class="notes">
-<p>Let’s go slow down a bit</p>
+<p>Which is the main point of my presentation here today. So let’s go slow down a bit</p>
 </aside>
 </div>
 </section><section id="data-visualization-as-a-communication-product-what-charts-say" class="slide level3" data-transition="slide-in fade-out">
@@ -558,7 +611,7 @@ and other non-factual data is challenging.</p>
 <p>Charts <em>do</em> “show me the data” (actually, it’s more that they <strong>tell</strong> the data than actually show it).</p>
 <p>Means choosing the right specific chart to use in order to display and query the data.</p>
 <div class="fragment">
-<p><strong>How to improve:</strong> Expose data cleanly and clearly. Accuracy <em>vs.</em> precision.</p>
+<p><strong>How to improve:</strong> Expose data cleanly and clearly. Aim for either query or validation. Distinguish accuracy <em>vs.</em> precision.</p>
 <aside class="notes">
 <p>Accuracy refers to the closeness of a measured value to a standard or known value. For example, if in lab you obtain a weight measurement of 3.2 kg for a given substance, but the actual or known weight is 10 kg, then your measurement is not accurate. In this case, your measurement is not close to the known value.</p>
 <p>Precision refers to the closeness of two or more measurements to each other. Using the example above, if you weigh a given substance five times, and get 3.2 kg each time, then your measurement is very precise. Precision is independent of accuracy. You can be very precise but inaccurate, as described above. You can also be accurate but imprecise.</p>
@@ -594,11 +647,15 @@ Original infographic (right) by Simon Scarr and redesigned, more default represe
 </figcaption>
 </figure>
 <aside class="notes">
-<p>Very strong message. Red, bars point down, looks like blood. Very evocative, emphasized by the title.</p>
-<p>Rotation: There’s still a peak, but the decline is more apparent</p>
-<p>Title: To match the main takeaway of the graph</p>
-<p>Color: not like blood anymore</p>
-<p>“Situation in Iraq is improving” –&gt; Completely different message!</p>
+<p>This chart would be an example of “not designing” or using the usual ways of doing dataviz. However this is actually a remake of this original chart:</p>
+<p>Carries a very strong message. Red, bars point down, looks like blood. Very evocative, emphasized by the title.</p>
+<p>There is deliberate choice in:</p>
+<ul>
+<li>Rotation: There’s still a peak, but the decline is more apparent</li>
+<li>Title: To match the main takeaway of the graph</li>
+<li>Color: not like blood anymore</li>
+<li>“Situation in Iraq is improving” –&gt; Completely different message!</li>
+</ul>
 <p>Neither of those charts is lying. The opinionated nature of charts should be acknowledged and embraced.</p>
 </aside>
 </section><section id="data-visualization-as-a-communication-product-what-charts-say-3" class="slide level3" data-transition="fade">
@@ -607,10 +664,13 @@ Original infographic (right) by Simon Scarr and redesigned, more default represe
 <p>The implicit channel of a data visualization (the title and other framing elements) can be even more powerful than the explicit channel.</p>
 <div class="fragment">
 <p><strong>How to improve:</strong> Style should be intentional, purposeful and thematically appropriate, not the result of defaults or superficial decisions.</p>
+<aside class="notes">
+<p>As these usually appeal to emotion instead of reason.</p>
+</aside>
 </div>
 </section><section id="data-visualization-as-a-communication-product-what-charts-say-4" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">2. Data visualization as a communication product</span> What charts say</h3>
-<p><strong>Systematically</strong></p>
+<p><strong>About the underlying system</strong></p>
 <p><br /></p>
 <blockquote>
 <p>[…] all charts display data and all data is a proxy for the systems that created and measured that data.</p>
@@ -621,7 +681,7 @@ Original infographic (right) by Simon Scarr and redesigned, more default represe
 </aside>
 </section><section id="data-visualization-as-a-communication-product-what-charts-say-5" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">2. Data visualization as a communication product</span> What charts say</h3>
-<p><strong>Systematically</strong></p>
+<p><strong>About the underlying system</strong></p>
 <figure>
 <img data-src="img/facebook-nfl.jpg" alt="Facebook Fandom Map 2014" width="700" /><figcaption>Facebook Fandom Map 2014</figcaption>
 </figure>
@@ -630,7 +690,7 @@ Original infographic (right) by Simon Scarr and redesigned, more default represe
 </aside>
 </section><section id="data-visualization-as-a-communication-product-what-charts-say-6" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">2. Data visualization as a communication product</span> What charts say</h3>
-<p><strong>Systematically</strong></p>
+<p><strong>About the underlying system</strong></p>
 <p><br /></p>
 <blockquote>
 <p>[…] all charts display data and all data is a proxy for the systems that created and measured that data.</p>
@@ -648,6 +708,10 @@ Original infographic (right) by Simon Scarr and redesigned, more default represe
 </div>
 <div class="fragment">
 <p><strong>How to improve:</strong> Consider annotations, labels, axis elements as part of the data visualization.</p>
+<aside class="notes">
+<p>In the way they are described.</p>
+<p><em>vs.</em> implicit channel: NOT “read this as a swear of blood, dripping down your screen”</p>
+</aside>
 </div>
 </section><section id="data-visualization-as-a-communication-product-what-charts-say-8" class="slide level3" data-transition="fade-in slide-out">
 <h3><span class="pretitle">2. Data visualization as a communication product</span> What charts say</h3>
@@ -669,6 +733,7 @@ Original infographic (right) by Simon Scarr and redesigned, more default represe
 </blockquote>
 <p><span class="source">(Meeks 2018)</span></p>
 <aside class="notes">
+<p>When they get perceived by the receivers, they generate meaning.</p>
 <p>Charts mean more than just what they say.</p>
 </aside>
 </section><section id="data-visualization-as-a-communication-product-what-charts-mean-1" class="slide level3" data-transition="fade">
@@ -683,14 +748,15 @@ Original infographic (right) by Simon Scarr and redesigned, more default represe
 <figure>
 <img data-src="img/obesity.png" alt="A Minnesota Department of Health chart on changing obesity rates that relies on BMI will still be around long after we develop a more sophisticated measure of health and yet nowhere on this chart does “BMI” appear (Meeks 2018)" /><figcaption>A Minnesota Department of Health chart on changing obesity rates that relies on BMI will still be around long after we develop a more sophisticated measure of health and yet nowhere on this chart does “BMI” appear (Meeks 2018)</figcaption>
 </figure>
-<!-- ### <span class="pretitle">2. Data visualization as a communication product</span> What charts mean {data-transition="fade"}
-
-**Culturally**
-
-<br />
-
-Charts should be adapted to the culture they will be consumed in (think user-centered design techniques). -->
 </section><section id="data-visualization-as-a-communication-product-what-charts-mean-3" class="slide level3" data-transition="fade">
+<h3><span class="pretitle">2. Data visualization as a communication product</span> What charts mean</h3>
+<p><strong>Culturally</strong></p>
+<p><br /></p>
+<p>Charts should be adapted to the culture they will be consumed in.</p>
+<aside class="notes">
+<p>In broad terms (as <em>western culture</em>) but also in the most local sense (as <em>company intra-culture</em>).</p>
+</aside>
+</section><section id="data-visualization-as-a-communication-product-what-charts-mean-4" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">2. Data visualization as a communication product</span> What charts mean</h3>
 <p><strong>Contextually</strong></p>
 <p>A chart might end up serving as context: design and provide a version of the chart that is suitable for inclusion alongside other charts.</p>
@@ -698,11 +764,11 @@ Charts should be adapted to the culture they will be consumed in (think user-cen
 <aside class="notes">
 <p>A chart that’s being integrated into another display or presentation can find itself in front of an audience that does not have the same domain knowledge as the primary audience, so this is yet another reason to have its data sources, dimensions and metrics more explicitly described.</p>
 </aside>
-</section><section id="data-visualization-as-a-communication-product-what-charts-mean-4" class="slide level3" data-transition="fade-in slide-out">
+</section><section id="data-visualization-as-a-communication-product-what-charts-mean-5" class="slide level3" data-transition="fade-in slide-out">
 <h3><span class="pretitle">2. Data visualization as a communication product</span> What charts mean</h3>
 <p><br /></p>
 <blockquote>
-<p>Meaning-making may sound too soft to the kind of technical professionals that make and read data visualization but communication without meaning is just noise.</p>
+<p>Meaning-making may sound too soft to the kind of technical professionals that make and read data visualization but <span class="highlighted">communication without meaning is just noise</span>.</p>
 </blockquote>
 <p><span class="source">(Meeks 2018)</span></p>
 </section><section id="data-visualization-as-a-communication-product-what-charts-do" class="slide level3" data-transition="slide-in fade-out">
@@ -711,6 +777,7 @@ Charts should be adapted to the culture they will be consumed in (think user-cen
 <p>The most important thing about a chart is its impact.</p>
 <aside class="notes">
 <p>Impact is the effect that should be caused by the chart.</p>
+<p>Like does it drive decision-making or not. Different kinds of impact:</p>
 </aside>
 </section><section id="data-visualization-as-a-communication-product-what-charts-do-1" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">2. Data visualization as a communication product</span> What charts do</h3>
@@ -775,7 +842,16 @@ Charts should be adapted to the culture they will be consumed in (think user-cen
 <p>Ultimately, what charts do may be the one most important thing.</p>
 </aside>
 </section></section>
-<section><section id="the-artefact-goes-social" class="title-slide slide level1"><h1>3. The artefact<br />goes social</h1></section><section id="the-artefact-goes-social-data-counseling" class="slide level3" data-transition="slide-in fade-out">
+<section><section id="the-artefact-goes-social" class="title-slide slide level1"><h1>3. The artefact<br />goes social</h1></section><section class="slide level3">
+
+<div class="center sans" style="margin-top:5em;">
+<p>Something to tell the data to <strong>others</strong>.</p>
+</div>
+<aside class="notes">
+<p>To put a product to use, transmit a message, prevent making noise, it is required to adapt to your audience.</p>
+<p>Couple ways to adapt that something we tell to those others: data counseling, responsive data visualization.</p>
+</aside>
+</section><section id="the-artefact-goes-social-data-counseling" class="slide level3" data-transition="slide-in fade-out">
 <h3><span class="pretitle">3. The artefact goes social</span> Data counseling</h3>
 <p><br /></p>
 <blockquote>
@@ -792,6 +868,12 @@ Charts should be adapted to the culture they will be consumed in (think user-cen
 <li class="fragment">gaining an understanding of the questions and data</li>
 <li class="fragment">get feedback on proxies, explorations, and visualization <strong>prototypes</strong> (2)</li>
 </ul>
+<aside class="notes">
+<ul>
+<li>gaining… FIRST/BEFORE</li>
+<li>get feedback on… AFTER</li>
+</ul>
+</aside>
 </section><section id="the-artefact-goes-social-data-counseling-2" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">3. The artefact goes social</span> Data counseling</h3>
 <p><strong>Interviews</strong></p>
@@ -820,18 +902,24 @@ Charts should be adapted to the culture they will be consumed in (think user-cen
 <li class="fragment">use the conversation to search out the more abstract question</li>
 </ul>
 <aside class="notes">
-<p>unstructured: can uncover unknown needs and goals, but it can take a significant amount of time to get to anything useful.</p>
-<p>structured: while efficient, leave little room for discovering new insights.</p>
+<p>Are kind of an art.</p>
+<ul>
+<li>unstructured: can uncover unknown needs and goals, but it can take a significant amount of time to get to anything useful.</li>
+<li>structured: while efficient, leave little room for discovering new insights.</li>
+</ul>
 </aside>
 </section><section id="the-artefact-goes-social-data-counseling-5" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">3. The artefact goes social</span> Data counseling</h3>
 <p><strong>Interviews</strong></p>
 <p>Use traditional conversation / interpersonal communication skills to prevent dead ends: keep them talking</p>
 <ul>
-<li class="fragment">rephrase responses back to the stakeholder</li>
+<li class="fragment">rephrase responses back</li>
 <li class="fragment">ask the same or similar questions in different ways</li>
 <li class="fragment">explore a completely different conversational topic</li>
 </ul>
+<aside class="notes">
+<p>Some techniques to achieve this:</p>
+</aside>
 </section><section id="the-artefact-goes-social-data-counseling-6" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">3. The artefact goes social</span> Data counseling</h3>
 <p><strong>Interviews</strong></p>
@@ -864,7 +952,7 @@ Charts should be adapted to the culture they will be consumed in (think user-cen
 and user-centered design</p>
 </div>
 <aside class="notes">
-<p>NOT to be confused with <strong>fast</strong> dataviz</p>
+<p>NOT to be confused with <strong>fast</strong> dataviz, which is more related to using the defaults or leaving un-designed elements.</p>
 </aside>
 </div>
 </section><section id="the-artefact-goes-social-data-counseling-9" class="slide level3" data-transition="fade">
@@ -875,8 +963,22 @@ and user-centered design</p>
 <img data-src="img/prototypes.png" alt="Prototypes range from low-fidelity sketches to high-fidelity working models (Meyer &amp; Fisher 2018)" /><figcaption>Prototypes range from low-fidelity sketches to high-fidelity working models (Meyer &amp; Fisher 2018)</figcaption>
 </figure>
 <aside class="notes">
-<p>low-fi: sketched on paper or on a whiteboard, digital mockups that may include some controls for explaining interaction ideas (slides). Can incorporate charts generated in Excel or Tableau with fake or sampled data. Great for communicatingthe gist of an idea in an interview, fast and easy to produce. Rapidly establish whether the visualizationd designer is on the same page as the stakeholders.</p>
-<p>hi-fi: custom visualizations which must be created from scratch. Largely contain the core functionality. Meant to be thrown away, the point is not to worry about the code other than to confirm that ideas can work.</p>
+<p>low-fi:</p>
+<ol type="1">
+<li>sketched on paper or on a whiteboard,</li>
+<li>digital mockups that may include some controls for explaining interaction ideas (slides = digital mockups)</li>
+<li>can incorporate charts generated in Excel or Tableau with fake or sampled data (= existing chart tools).</li>
+</ol>
+<ul>
+<li>Great for communicating the gist of an idea in an interview, fast and easy to produce.</li>
+<li>Rapidly establish whether the visualizationd designer is on the same page as the stakeholders.</li>
+</ul>
+<p>hi-fi:</p>
+<ul>
+<li>custom visualizations which must be created from scratch. Largely contain the core functionality.</li>
+<li>Risk being confused with final</li>
+<li>Meant to be thrown away, the point is not to worry about the code other than to confirm that ideas can work.</li>
+</ul>
 </aside>
 </section><section id="the-artefact-goes-social-data-counseling-10" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">3. The artefact goes social</span> Data counseling</h3>
@@ -890,6 +992,9 @@ and user-centered design</p>
 <p>Responsive web design, and responsive data visualization are not simply a way to make our content accessible on smaller screens. We need to build an ergonomic web that feels natural regardless of device type.</p>
 </blockquote>
 <p><span class="source">(Hinderman 2018)</span></p>
+<aside class="notes">
+<p>= implies more than simply using fluid measuers</p>
+</aside>
 </section><section id="the-artefact-goes-social-responsive-data-visualization-1" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">3. The artefact goes social</span> Responsive data visualization</h3>
 <p><br /></p>
@@ -899,11 +1004,13 @@ and user-centered design</p>
 <li class="fragment">changes in <strong>the data</strong> that is being displayed</li>
 </ul>
 <aside class="notes">
-<p>the user: core of responsive web design as a whole</p>
-<p>the data: unique to data visualization. This is what makes a visualization FULLY responsive <em>vs.</em> simply scaling them at different viewport sizes, like an image.</p>
 <blockquote>
 <p>[…] every single thing that you can do to make your visualization more clear, more usable, or more communicative is a reaction to either the context in which the user is trying to consume it, or a change in the data being displayed.</p>
 </blockquote>
+<ul>
+<li>the user: core of responsive web design as a whole</li>
+<li>the data: unique to data visualization. This is what makes a visualization FULLY responsive <em>vs.</em> simply scaling them at different viewport sizes, like an image.</li>
+</ul>
 </aside>
 </section><section id="the-artefact-goes-social-responsive-data-visualization-2" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">3. The artefact goes social</span> Responsive data visualization</h3>
@@ -942,7 +1049,7 @@ and user-centered design</p>
 </aside>
 </section><section id="the-artefact-goes-social-responsive-data-visualization-5" class="slide level3" data-transition="fade">
 <h3><span class="pretitle">3. The artefact goes social</span> Responsive data visualization</h3>
-<p>Different views on heartreate depending on device:</p>
+<p>Different views on heartrate depending on device:</p>
 <p><br /></p>
 <figure>
 <img data-src="img/garmin-watch.jpg" alt="Garmin watch" width="200" /><figcaption>Garmin watch</figcaption>
@@ -1042,6 +1149,7 @@ A library of different information visualization types.</li>
 <div style="width:48%;float:left;">
 <p>Eric J. Allen, Patricia M. Dechow, Devin G. Pope, George Wu (2017) “<a href="https://faculty.chicagobooth.edu/devin.pope/research/pdf/Website_Marathons.pdf">Reference-Dependent Preferences: Evidence from Marathon Runners</a>”. <em>Management Science</em> 63(6):1657-1672. https://doi.org/10.1287/mnsc.2015.2417</p>
 <p>Anthony Aragues (2018), <em>Visualizing Streaming Data</em>. O’Reilly Media</p>
+<p>Jeremy Ashkenas &amp; Alicia Parlapiano (2014), <a href="https://www.nytimes.com/interactive/2014/06/05/upshot/how-the-recession-reshaped-the-economy-in-255-charts.html?mtrref=undefined&amp;gwh=0B9210D70DC7FAE7E8AF89C32004F1F3&amp;gwt=pay&amp;assetType=REGIWALL">&quot;How the Recession Reshaped the Economy, in 255 Charts</a>&quot; in <em>TheUpshot</em> at The New York Times</p>
 <p>Tanja Blascheck, Lonni Besançon, Anastasia Bezerianos, Bongshin Lee, Petra Isenberg (2019). “<a href="https://www.microsoft.com/en-us/research/publication/glanceable-visualization-studies-of-data-comparison-performance-on-smartwatches/">Glanceable Visualization: Studies of Data Comparison Performance on Smartwatches</a>”. <em>IEEE Transactions on Visualization and Computer Graphics</em> 25(1) <a href="https://ieeexplore.ieee.org/document/8443125"><code>10.1109/TVCG.2018.2865142</code></a>`</p>
 <p>Matthew Brehmer, Bongshin Lee, Petra Isenberg, Eun Kyoung Choe (2019). “<a href="https://www.microsoft.com/en-us/research/publication/visualizing-ranges-over-time-on-mobile-phones-a-task-based-crowdsourced-evaluation/">Visualizing Ranges over Time on Mobile Phones: A Task-Based Crowdsourced Evaluation</a>”. <em>IEEE Transactions on Visualization and Computer Graphics</em> 25(1) <a href="https://ieeexplore.ieee.org/document/8440812"><code>10.1109/TVCG.2018.2865234</code></a></p>
 <p>Brendan Gregg (2016), “<a href="https://queue.acm.org/detail.cfm?id=2927301">The Flame Graph</a>”. <em>ACM Queue</em> 14(2)</p>
